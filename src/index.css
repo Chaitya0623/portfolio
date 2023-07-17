@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 480px) {
+  .hide {
+    display: none;
+  }
+}
+
 ::-webkit-scrollbar{
   background: #070a18;
   width: 12px;
