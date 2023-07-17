@@ -201,7 +201,7 @@ import {
     },
     {
       testimonial: "Ranked in Top 6 in a National Level Hackathon (Project: WorkConnect) where we created a novel approach on seamless communication between clients and workers.",
-      name: "Top 6 at Uscript Rookies Hackathon 2k23",
+      name: "Top 6 at Unscript Rookies Hackathon 2k23",
       designation: "COO",
       company: "DEF Corp",
       image: unscript23,
