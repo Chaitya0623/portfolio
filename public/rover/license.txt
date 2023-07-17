@@ -1,0 +1,11 @@
+Model Information:
+* title:	Martian Rover "THOTH"
+* source:	https://sketchfab.com/3d-models/martian-rover-thoth-e76d2a9172b54a62b89c9f18710d9cbc
+* author:	Maxim Senchenko (https://sketchfab.com/SenchenkoMA)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Martian Rover "THOTH"" (https://sketchfab.com/3d-models/martian-rover-thoth-e76d2a9172b54a62b89c9f18710d9cbc) by Maxim Senchenko (https://sketchfab.com/SenchenkoMA) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
