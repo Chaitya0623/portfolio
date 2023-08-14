@@ -151,21 +151,21 @@ import {
       iconBg: "#383E56",
       date: "May 2022 - Present",
       points: [
-        "Worked with Arduino, Gazebo, Rviz, created website pages with React and integrated them with ROS.",
+        "Worked on Rover Integration using Arduino & ROS on Ubuntu (Linux), worked with Gazebo, Rviz, built & connected React GUI Pages. Currently working on Autonomous Functioning of the Rover with AI, ROS and OpenCV.",
         "3rd Position in International Rover Design Challenge (IRDC) 2022, 8th in International Rover Challenge (IRC) 2023 and Qualified for European Rover Challenge (ERC) (Onsite and Remote) 2023.",
 
       ],
     },
     {
-      title: "Machine Learning Developer",
+      title: "Machine Learning Head",
       company_name: "Synapse",
       icon: synapse,
       iconBg: "#E6DEDD",
       date: "Sep 2022 - Present",
       points: [
-        "Created Hand Volume Controller using CV and Sentiment Analyzer using NLP.",
-        "Was in the Organizing Committee (Publicity) for Re-Quest 2022 and also helped contacting sponsors.",
-        "Wrote a Research Paper on Sentence Restructuring with User-Controlled Difficulty using NLP",
+        "Will be designing and conducting training sessions on ML concepts, CV techniques, and NLP algorithms for mentees and assisting them with personalized guidance and mentoring for their Research Papers.",
+        "Created various mini-projects, organized events, took seminars and also helped contacting sponsors.",
+        "Wrote a Research Paper on Sentence Restructuring with User-Controlled Difficulty using NLP.",
       ],
     },
     {
@@ -173,7 +173,7 @@ import {
       company_name: "Infiheal",
       icon: infiheal,
       iconBg: "#E6DEDD",
-      date: "Jun 2023 - Aug 2023",
+      date: "Jun 2023 - Present",
       points: [
         "Created models for a Mental Health Chatbot using Microsoft Azure, Large Language Models (LLM’s), LangChains, Haystack, Prompt Engineering, HuggingFace Transformer models, Web scraped data & tested them with FastAPI",
         "Deployed models on Amazon Web Services (AWS) via Linux using services like Docker, Github, ECR and ECS.",
@@ -184,7 +184,7 @@ import {
       company_name: "DJ Unicode",
       icon: unicode,
       iconBg: "#E6DEDD",
-      date: "Oct 2022 - Present",
+      date: "Oct 2022 - Aug 2023",
       points: [
         "Made various mini-projects & currently working on an Internship Portal as a final Group Project.",
       ],
@@ -195,15 +195,11 @@ import {
     {
       testimonial: "An Inter-College Datathon where we applied significant Machine Learning Algorithms to Data Science datasets while competing with 200 shortlisted students to win the Event.",
       name: "Winner of X-tract 2022",
-      designation: "CFO",
-      company: "Acme Co",
       image: xtract,
     },
     {
       testimonial: "Ranked in Top 6 in a National Level Hackathon (Project: WorkConnect) where we created a novel approach on seamless communication between clients and workers.",
       name: "Top 6 at Unscript Rookies Hackathon 2k23",
-      designation: "COO",
-      company: "DEF Corp",
       image: unscript23,
     },
   ];
