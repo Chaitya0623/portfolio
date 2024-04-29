@@ -12,11 +12,11 @@
 
 ::-webkit-scrollbar{
   background: #070a18;
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb{
   background: linear-gradient(#6fa3f3,#1e50bd);
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 * {
@@ -76,6 +76,13 @@
   background: "#00cea8";
   background: linear-gradient(90.13deg, #1e50bd 1.9%, #6fa3f3 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #1e50bd 1.9%, #6fa3f3 97.5%);
+}
+
+.text-with-gradient-border {
+  color: transparent; /* Hide the original text color */
+  border-color: linear-gradient(90.13deg, #1e50bd 1.9%, #6fa3f3 97.5%);
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
 }
 
 .orange-text-gradient {

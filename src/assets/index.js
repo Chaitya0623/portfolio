@@ -4,6 +4,9 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+import gmail from "./gmail.png";
+import instagram from "./instagram.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,6 +29,10 @@ import infiheal from './company/infiheal.png'
 import synapse from './company/synapse.jpeg'
 import unicode from './company/unicode.jpeg'
 import iitp from './company/iitp.jpeg'
+import simppl from './company/simppl.png'
+import simppl_image from './company/simppl_image.jpg'
+import synapse_image from './company/synapse_image.jpg'
+import antariksh_image from './company/antariksh_image.jpg'
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -43,6 +50,10 @@ import ros from './tech/ros.jpg'
 
 import xtract from './pictures/xtract.png'
 import unscript23 from './pictures/unscript23.png'
+import irc24 from './pictures/irc24.jpg'
+import irc23 from './pictures/irc23.jpg'
+import ercr23 from './pictures/ercr23.jpg'
+import isdc24 from './pictures/isdc24.jpg'
 
 import healo from './pictures/healo.jpeg'
 import yummatch from './pictures/yummatch.png'
@@ -50,6 +61,11 @@ import shortathon from './pictures/shortathon.jpg'
 import tubeboost from './pictures/tubeboost.png'
 import workconnect from './pictures/workconnect.webp'
 import verifyu from './pictures/verifyu.webp'
+import retiral from './pictures/retiral.png'
+import resugenius from './pictures/resugenius.png'
+
+import analysisLottie from './analysisLottie.json'
+import contactLottie from './contactLottie.json'
 
 export {
   logo,
@@ -58,6 +74,9 @@ export {
   mobile,
   web,
   github,
+  linkedin,
+  gmail,
+  instagram,
   menu,
   close,
   css,
@@ -78,6 +97,10 @@ export {
   synapse,
   unicode,
   infiheal,
+  simppl,
+  simppl_image,
+  synapse_image,
+  antariksh_image,
   meta,
   shopify,
   starbucks,
@@ -92,10 +115,18 @@ export {
   python,
   xtract,
   unscript23,
+  irc23,
+  irc24,
+  ercr23,
+  isdc24,
   healo,
   yummatch,
   shortathon,
   verifyu,
+  retiral,
+  resugenius,
   workconnect,
   tubeboost,
+  analysisLottie,
+  contactLottie,
 };

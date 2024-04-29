@@ -4,6 +4,7 @@ import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
 
+
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
@@ -29,9 +30,17 @@ const Navbar = () => {
                 ? "text-white"
                 : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => {
+                setActive(link.title);
+                window.scrollTo(0,0);}}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+              {link.id === 'contact' ? (
+                <a href={`/#${link.id}`}>{link.title}</a>
+              ) : link.id === 'home' ? (
+                <a href='/'>{link.title}</a>
+              ) : (
+                <Link to={`/${link.id}`}>{link.title}</Link>
+              )}
               </li>
             ))}
           </ul>
@@ -57,7 +66,11 @@ const Navbar = () => {
                   setActive(link.title)
                 }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.id === 'contact' ? (
+                    <a href={`/#${link.id}`}>{link.title}</a>
+                  ) : (
+                    <Link to={`/${link.id}`}>{link.title}</Link>
+                  )} 
                 </li>
               ))}
             </ul>

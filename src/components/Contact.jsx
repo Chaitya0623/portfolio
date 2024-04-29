@@ -6,6 +6,10 @@ import { slideIn } from "../utils/motion";
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import SectionWrapper from '../hoc/SectionWrapper'
+import { github, linkedin, instagram } from "../assets";
+
+import Lottie from 'react-lottie'
+import { contactLottie } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -64,15 +68,24 @@ const Contact = () => {
       );
   };
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: contactLottie,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  }
+
   return (
     <div
-      className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:mt-0 mt-[-250px]`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <h3 className={`${styles.sectionHeadText} flex justify-center`}>Contact</h3>
 
         <form
           ref={formRef}
@@ -86,7 +99,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What is your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -97,18 +110,18 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What is your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows={4}
+              rows={3}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='What do you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -119,10 +132,25 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-          <div className="flex flex-wrap justify-center align-center gap-3 mt-3">
-            <p className="py-4 px-6 text-white font-medium">Also contact me via:</p>
-            <button className="bg-[#0c235f] py-3 px-4 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://github.com/Chaitya0623', "_blank")}>GitHub</button>
-            <button className="bg-[#0c235f] py-3 px-4 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.linkedin.com/in/chaitya-shah-381b5421b/', "_blank")}>LinkedIn</button>
+          <div className="flex flex-wrap justify-center align-center gap-3 mt-5">
+            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://github.com/Chaitya0623', "_blank")}>              
+              <img
+                src={github}
+                className='w-7 h-7 object-contain'
+              />
+            </button>
+            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.linkedin.com/in/chaitya-shah-381b5421b/', "_blank")}>              
+              <img
+                src={linkedin}
+                className='w-7 h-7 object-contain'
+              />
+            </button>
+            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.instagram.com/chaitya0623/', "_blank")}>              
+              <img
+                src={instagram}
+                className='w-7 h-7 object-contain'
+              />
+            </button>
           </div>
       </motion.div>
 
@@ -130,7 +158,10 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+      <div className="sm:ml-[100px] sm:mt-100 mt-[150px]">
+        <Lottie options={defaultOptions} height={window.innerWidth < 600 ? 240 : 400} width={window.innerWidth < 600 ? 300 : 500}/>
+      </div>
+        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );

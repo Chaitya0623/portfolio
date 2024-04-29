@@ -8,7 +8,7 @@ import SectionWrapper from '../hoc/SectionWrapper'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[150px] w-full">
       <motion.div
       variants={fadeIn("right","spring",0.5*index,0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
@@ -17,8 +17,8 @@ const ServiceCard = ({ index, title, icon }) => {
           max:45,
           scale:1,
           speed:450
-        }} className='bg-tertiary  rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-          <img src={icon} alt={title} className='wi16 h-16 object-contain'/>
+        }} className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[130px] flex justify-evenly items-center flex-col'>
+          {/* <img src={icon} alt={title} className='wi16 h-16 object-contain'/> */}
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
@@ -30,19 +30,19 @@ const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-      <h2 className={`${styles.sectionHeadText}`}>
+      <h2 className={`${styles.sectionHeadText} text-center mt-[-350px] sm:mt-0`}>
         Introduction
       </h2>
     </motion.div>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
-    className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+    className='mt-4 text-secondary text-[17px]  leading-[30px] text-center'>
       Being a fast-learner and a hardworking student, I’m passionate about 
       Computer Engineering. I am an avid reader and I also love playing sports. 
       Travelling to new places and living in the nature is my forte!
     </motion.p>
 
-    <div className='mt-20 flex flex-wrap gap-10 justify-center align-center'>
+    <div className='mt-10 flex flex-wrap gap-10 justify-center align-center'>
       {services.map((service,index) => (
         <ServiceCard key={service.title} index={index} {...service}/>
       ))}
@@ -51,4 +51,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, 'about')
+export default SectionWrapper(About, '')

@@ -2,7 +2,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { motion } from "framer-motion"
 import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
-import { experiences } from '../constants'
+import { internships, positionsofresponsibility } from '../constants'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { textVariant } from "../utils/motion"
 
@@ -46,6 +46,22 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      {experience.image && (
+        <img
+          src={experience.image}
+          className='w-full h-auto mt-5 rounded-lg'
+        />
+      )}
+      {experience.link && (
+        <a
+          href={experience.link}
+          className='mt-5 text-white-100 text-[19px] font-bold tracking-wider block mt-3'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {experience.linkname || 'Link'}
+        </a>
+      )}
     </VerticalTimelineElement>
   );
 };
@@ -55,13 +71,30 @@ const Experience = () => {
     <>
     <motion.div variants={textVariant()}>
       <h2 className={`${styles.sectionHeadText} text-center`}>
-        Work Experience.
+        Internships
       </h2>
     </motion.div>
 
-    <div className='mt-20 flex flex-col'>
+    <div className='mt-10 flex flex-col'>
       <VerticalTimeline>
-        {experiences.map((experience, index) => (
+        {internships.map((experience, index) => (
+          <ExperienceCard
+            key={`experience-${index}`}
+            experience={experience}
+          />
+        ))}
+      </VerticalTimeline>
+    </div>
+
+    <motion.div variants={textVariant()}>
+      <h2 className={`${styles.sectionHeadText} text-center mt-10`}>
+        Positions Of Responsibility
+      </h2>
+    </motion.div>
+
+    <div className='mt-10 flex flex-col'>
+      <VerticalTimeline>
+        {positionsofresponsibility.map((experience, index) => (
           <ExperienceCard
             key={`experience-${index}`}
             experience={experience}
@@ -73,4 +106,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, 'work')
+export default SectionWrapper(Experience, 'experience')

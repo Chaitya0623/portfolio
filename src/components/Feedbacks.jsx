@@ -1,5 +1,5 @@
 import React from "react";
-import { testimonials } from "../constants";
+import { testimonials, competitions } from "../constants";
 
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
@@ -15,36 +15,48 @@ const FeedbackCard = ({
   image,
 }) => (
   <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-[#0c235f] p-10 rounded-3xl xs:w-[320px] w-full'
-  >
-      <div className='mt-3 block justify-between items-center gap-1 w-full'>
+    variants={fadeIn("up", "spring", index * 0.5, 0.75)}  >
+      <div className='block justify-between items-center text-center gap-1 w-full'>
+          <p className='text-white font-bold text-[48px]'>
+           {name}
+          </p>
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl w-full'
+            className='sm:w-[50%] h-[60%] mx-auto object-cover rounded-2xl w-full mt-5'
           />
-        <div className='flex-1 flex flex-col mt-3'>
-          <p className='text-white font-medium text-[16px]'>
-           {name}
-          </p>
-          <p className='mt-1 text-secondary text-[12px]'>
+          <p className='mt-1 text-secondary text-[24px] mt-5 mb-10'>
             {testimonial}
           </p>
-        </div>
       </div>
   </motion.div>
 );
 
 const Feedbacks = () => {
   return (
+    <>
+    <motion.div variants={textVariant()}>
+      <h2 className={`${styles.sectionHeadText} text-center`}>International Competitions</h2>
+    </motion.div>
     <div className={`bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[100px]`}
       >
-        <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>Achievements</h2>
-        </motion.div>
+      </div>
+      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
+        {competitions.map((testimonial, index) => (
+          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+        ))}
+      </div>
+    </div>
+
+    <motion.div variants={textVariant()}>
+      <h2 className={`${styles.sectionHeadText} text-center mt-10`}>Hackathons</h2>
+    </motion.div>
+    <div className={`bg-black-100 rounded-[20px] mt-10`}>
+      <div
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[100px]`}
+      >
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
         {testimonials.map((testimonial, index) => (
@@ -52,7 +64,8 @@ const Feedbacks = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "achievements");
