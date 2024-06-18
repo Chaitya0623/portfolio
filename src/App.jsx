@@ -20,36 +20,39 @@ const App = () => {
               <Navbar/>
               <Hero/>
               <About/>
+              <Experience />
+              <Feedbacks />
+              <Works />
               {/* <div className="relative z-0"> */}
                 <Contact/>
                 {/* <StarsCanvas/> */}
               {/* </div> */}
             </>}>
             </Route>
-            <Route path="/home" element={              
+            {/* <Route path="/home" element={              
             <>
               <Navbar/>
               <Hero/>
-              <About/>
+              <About/> */}
               {/* <div className="relative z-0"> */}
-                <Contact/>
+                {/* <Contact/> */}
                 {/* <StarsCanvas/> */}
               {/* </div> */}
-            </>}>
-            </Route>
-            <Route path="/experience" element={
+            {/* </>}> */}
+            {/* </Route> */}
+            {/* <Route path="/experience" element={
             <>
               <Navbar />
               <Experience />
             </>}>
-            </Route>
-            <Route path="/projects" element={
+            </Route> */}
+            {/* <Route path="/projects" element={
             <>
               <Navbar />
               <Works />
             </>}>
-            </Route>
-            <Route path="/achievements" element={
+            </Route> */}
+            {/* <Route path="/achievements" element={
             <>
               <Navbar />
               <Feedbacks />
@@ -57,16 +60,16 @@ const App = () => {
             </Route>
             <Route path="/publications" element={
             <>
-              <Navbar />
+              <Navbar /> */}
               {/* <Publications /> */}
-            </>}>
+            {/* </>}>
             </Route>
             <Route path="/competitions" element={
             <>
-              <Navbar />
+              <Navbar /> */}
               {/* <Publications /> */}
-            </>}>
-            </Route>
+            {/* </>}> */}
+            {/* </Route> */}
             {/* <Route path="/projects" element={<Works />}></Route> */}
             {/* <Route path="/achievements" element={<Feedbacks />}></Route> */}
           </Routes>

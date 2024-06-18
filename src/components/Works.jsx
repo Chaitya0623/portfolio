@@ -25,11 +25,11 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[200px]'>
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-fit rounded-2xl'
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -47,11 +47,11 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold text-[20px] text-center'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px] text-center'>{description}</p>
         </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
+{/* 
+        <div className='mt-4 flex flex-wrap gap-2 justify-center'>
           {tags && tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -60,7 +60,7 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-        </div>
+        </div> */}
       </Tilt>
     </motion.div>
   );
@@ -84,11 +84,41 @@ const PublicationCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
+        <div className='relative w-full h-[200px]'>
+          <img
+            src={image}
+            alt='project_image'
+            className='w-full h-full object-fit rounded-2xl'
+          />
+
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              {/* <img
+                src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              /> */}
+              {source_code_link && (
+              <a
+                href={source_code_link}
+                className='text-white-100 w-1/2 h-1/2 font-bold tracking-wider block'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {'🔗'}
+              </a>
+            )}
+            </div>
+          </div>
+        </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <h3 className='text-white font-bold text-[20px] text-center'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px] text-center'>{description}</p>
+          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
           {source_code_link && (
           <a
             href={source_code_link}
@@ -99,7 +129,7 @@ const PublicationCard = ({
             {'🔗'}
           </a>
         )}
-          </div>
+          </div> */}
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -121,12 +151,12 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
+        <h2 className={`${styles.sectionHeadText} text-center mt-[-50px]`}>Projects</h2>
       </motion.div>
 
 
 
-      <div className='mt-10 flex flex-wrap gap-7'>
+      <div className='mt-10 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -138,7 +168,7 @@ const Works = () => {
 
 
 
-      <div className='mt-10 flex flex-wrap gap-7'>
+      <div className='mt-10 flex flex-wrap gap-7 justify-center'>
         {publications.map((project, index) => (
           <PublicationCard key={`project-${index}`} index={index} {...project} />
         ))}

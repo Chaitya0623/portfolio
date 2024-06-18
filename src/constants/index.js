@@ -51,6 +51,10 @@ import {
     tubeboost,
     retiral, 
     resugenius,
+    avrio,
+    aaai,
+    springer,
+    ieee
   } from "../assets";
   
   export const navLinks = [
@@ -59,8 +63,8 @@ import {
       title: "Home",
     },
     {
-      id: "contact",
-      title: "Contact",
+      id: "about",
+      title: "About",
     },
     {
       id: "experience",
@@ -73,6 +77,10 @@ import {
     {
       id: "projects",
       title: "Projects",
+    },
+    {
+      id: "contact",
+      title: "Contact",
     },
   ];
   
@@ -174,130 +182,167 @@ import {
   
   const internships = [
     {
-      title: "Research Engineer",
-      company_name: "SimPPL",
-      icon: simppl,
-      iconBg: "#383E56",
-      date: "Aug 2023 - Present",
-      image: simppl_image,
-      points: [
-        "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
-        "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
-        "UUtilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%.",
-      ],
+      name: "Data Science Intern",
+      description: "Jun 2024 - Present",
+      image: avrio,
     },
     {
-      title: "Research Intern",
-      company_name: "IIT Patna",
-      icon: iitp,
-      iconBg: "#383E56",
-      date: "May 2023 - Nov 2023",
-      link: "https://drive.google.com/file/d/1E9HxIH85tDnzHSNA6WqF-WKthT0KHCo0/view?usp=drive_link",
-      linkname: "Certificate 🔗",
-      points: [
-        "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
-        "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
-        "Utilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%",
-      ],
+      name: "Research Engineer",
+      description: "Aug 2023 - Jun 2024",
+      image: simppl,
     },
     {
-      title: "Artificial Intelligence Intern",
-      company_name: "Infiheal",
-      icon: infiheal,
-      iconBg: "#E6DEDD",
-      date: "Jun 2023 - Sep 2023",
-      link: "https://drive.google.com/file/d/1cyLLDPNwz8lxWwtF4hkLXSRJF-b33FuX/view?usp=drive_link",
-      linkname: "Recommendation 🔗",
-      points: [
-        "Optimized a therapist-toned retriever-generative chatbot, enhancing its accuracy by 4% using LLM's, LangChains, and Haystacks.",
-        "Identified the causes of depression using multilabel zero-shot classification on 500,000+ texts, achieving an accuracy of 93%.",
-        "Deployed models on Amazon Web Services (AWS) utilizing Terraforms and Docker, cutting the response time by 1-2 seconds.",
-        "Spearheaded a team of 8 newer interns in developing semantic datasets using transformer-based text generative models."
-      ],
+      name: "Research Intern",
+      description: "May 2023 - Nov 2024",
+      image: iitp,
     },
+    {
+      name: "Artificial Intelligence Intern",
+      description: "Jun 2023 - Sep 2024",
+      image: infiheal,
+    },
+    // {
+    //   title: "Research Engineer",
+    //   company_name: "SimPPL",
+    //   icon: simppl,
+    //   iconBg: "#383E56",
+    //   date: "Aug 2023 - Present",
+    //   image: simppl_image,
+    //   points: [
+    //     "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
+    //     "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
+    //     "UUtilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%.",
+    //   ],
+    // },
+    // {
+    //   title: "Research Intern",
+    //   company_name: "IIT Patna",
+    //   icon: iitp,
+    //   iconBg: "#383E56",
+    //   date: "May 2023 - Nov 2023",
+    //   link: "https://drive.google.com/file/d/1E9HxIH85tDnzHSNA6WqF-WKthT0KHCo0/view?usp=drive_link",
+    //   linkname: "Certificate 🔗",
+    //   points: [
+    //     "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
+    //     "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
+    //     "Utilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%",
+    //   ],
+    // },
+    // {
+    //   title: "Artificial Intelligence Intern",
+    //   company_name: "Infiheal",
+    //   icon: infiheal,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jun 2023 - Sep 2023",
+    //   link: "https://drive.google.com/file/d/1cyLLDPNwz8lxWwtF4hkLXSRJF-b33FuX/view?usp=drive_link",
+    //   linkname: "Recommendation 🔗",
+    //   points: [
+    //     "Optimized a therapist-toned retriever-generative chatbot, enhancing its accuracy by 4% using LLM's, LangChains, and Haystacks.",
+    //     "Identified the causes of depression using multilabel zero-shot classification on 500,000+ texts, achieving an accuracy of 93%.",
+    //     "Deployed models on Amazon Web Services (AWS) utilizing Terraforms and Docker, cutting the response time by 1-2 seconds.",
+    //     "Spearheaded a team of 8 newer interns in developing semantic datasets using transformer-based text generative models."
+    //   ],
+    // },
   ];
 
+  // const positionsofresponsibility = [
+  //   {
+  //     title: "Coding Head",
+  //     company_name: "DJS Antariksh",
+  //     icon: antariksh,
+  //     iconBg: "#383E56",
+  //     date: "May 2022 - Present",
+  //     image: antariksh_image,
+  //     points: [
+  //       "Led a 30+ member Coding Department within a 150+ member Rover and Drone Team, trained juniors in the field of robotics.",
+  //       "Participated and secured victories in multiple International Competitions which played an important role in pioneering International Rover Competition culture in India, thereby guiding and assisting 4+ teams in establishing their rover teams.",
+  //       "Performed Data Analysis on data collected from pH, atmospheric pressure, water and other sensors to discover the presence of life in soil. Designed an annotated dataset for object detection, trained a YoloV8 model in PyTorch achieving 89% accuracy.",
+  //       "Utilized Robot Operating Systems to facilitate Autonomous Navigation and Robotic Arm Movements. Developed the Team website, and a GUI Interface with React, integrated with ROS for camera feeds, data visualizations, and Rover Control.",
+  //       "Co-authored comprehensive documentation to support competition qualification, ensuring precise records of project details."
+  //     ],
+  //   },
+  //   {
+  //     title: "Machine Learning Head",
+  //     company_name: "Synapse",
+  //     icon: synapse,
+  //     iconBg: "#E6DEDD",
+  //     date: "Sep 2022 - Present",
+  //     image: synapse_image,
+  //     points: [
+  //       "Mentored 50+ mentees with personalised training in simplifying Machine Learning concepts and enhancing Research Papers writing.",
+  //       "Organized a national hackathon for 1800+ participants, gave speaker sessions to 500+ students to kickstart their AI/ML Journey",
+  //     ],
+  //   },
+  //   {
+  //     title: "Full Stack Developer (Django)",
+  //     company_name: "DJ Unicode",
+  //     icon: unicode,
+  //     iconBg: "#E6DEDD",
+  //     date: "Oct 2022 - Aug 2023",
+  //     points: [
+  //       "Wrote a Research Paper on Sentence Restructuring with User-Controlled Difficulty using NLP.",
+  //       "Implemented frontend pages using Figma and React. Developed an Internship Recommender System integrated with Django.",
+  //     ],
+  //   },
+  // ];
+  
   const positionsofresponsibility = [
     {
-      title: "Coding Head",
-      company_name: "DJS Antariksh",
-      icon: antariksh,
-      iconBg: "#383E56",
-      date: "May 2022 - Present",
-      image: antariksh_image,
-      points: [
-        "Led a 30+ member Coding Department within a 150+ member Rover and Drone Team, trained juniors in the field of robotics.",
-        "Participated and secured victories in multiple International Competitions which played an important role in pioneering International Rover Competition culture in India, thereby guiding and assisting 4+ teams in establishing their rover teams.",
-        "Performed Data Analysis on data collected from pH, atmospheric pressure, water and other sensors to discover the presence of life in soil. Designed an annotated dataset for object detection, trained a YoloV8 model in PyTorch achieving 89% accuracy.",
-        "Utilized Robot Operating Systems to facilitate Autonomous Navigation and Robotic Arm Movements. Developed the Team website, and a GUI Interface with React, integrated with ROS for camera feeds, data visualizations, and Rover Control.",
-        "Co-authored comprehensive documentation to support competition qualification, ensuring precise records of project details."
-      ],
+      name: "Coding Head",
+      description: "May 2022 - Present",
+      image: antariksh,
     },
     {
-      title: "Machine Learning Head",
-      company_name: "Synapse",
-      icon: synapse,
-      iconBg: "#E6DEDD",
-      date: "Sep 2022 - Present",
-      image: synapse_image,
-      points: [
-        "Mentored 50+ mentees with personalised training in simplifying Machine Learning concepts and enhancing Research Papers writing.",
-        "Organized a national hackathon for 1800+ participants, gave speaker sessions to 500+ students to kickstart their AI/ML Journey",
-      ],
+      name: "Machine Learning Head",
+      description: "Sep 2022 - Present",
+      image: synapse,
     },
     {
-      title: "Full Stack Developer (Django)",
-      company_name: "DJ Unicode",
-      icon: unicode,
-      iconBg: "#E6DEDD",
-      date: "Oct 2022 - Aug 2023",
-      points: [
-        "Wrote a Research Paper on Sentence Restructuring with User-Controlled Difficulty using NLP.",
-        "Implemented frontend pages using Figma and React. Developed an Internship Recommender System integrated with Django.",
-      ],
+      name: "Full Stack Django Developer",
+      description: "Oct 2022 - Aug 2023",
+      image: unicode,
     },
-  ];
-  
+  ]
+
   const testimonials = [
     {
-      testimonial: "An Inter-College Datathon where we applied significant Machine Learning Algorithms to Data Science datasets while competing with 200 shortlisted students to win the Event.",
+      description: "Nov 2022",
       name: "Winner of X-tract 2022",
       image: xtract,
-    },
-    {
-      testimonial: "Ranked in Top 6 in a National Level Hackathon (Project: WorkConnect) where we created a novel approach on seamless communication between clients and workers.",
-      name: "Top 6 at Unscript Rookies Hackathon 2k23",
-      image: unscript23,
     },
   ];
   const competitions = [
     {
-      testimonial: " Spearheaded the coding team for Autonomous Navigation Movements using SLAM Algorithms, ensuring Obstacle Avoidance. Managed data transfer between the system for diverse tasks.",
+      description: "Jan 2024",
       name: "3rd in International Rover Challenge 2024, Coimbatore, India",
       image: irc24,
     },
     {
-      testimonial: "Led the creation of a versatile drone, capable for maneuvering navigation and scientific tasks, optimizing efficient transmission of camera image and sensor data using ArduPilot.",
+      description: "Jan 2024",
       name: "2nd in International Space Drone Challenge 2024, Coimbatore, India",
       image: isdc24,
     },
     {
-      testimonial: "Operated the Rover for the Navigation Task, scored full. Automated the Robotic Arm for the Maintenance Task with Open Motion Planning Libraries & Moveit, while competing against 34 International Teams.",
+      description: "Sep 2023",
       name: "2nd in European Rover Challenge 2023 (Remote)",
       image: ercr23,
     },
     {
-      testimonial: "The team participated in an Offline Competition for the 1st time. Worked on Autonomous Navigation and Arm Movements",
+      description: "Jan 2023",
       name: "8th in International Rover Challenge 2024, Bangalore, India",
       image: irc23,
+    },
+    {
+      description: "Nov 2022",
+      name: "Winner of X-tract 2022",
+      image: xtract,
     },
   ];
   
   const projects = [
     {
       name: "Retiral",
-      description:
-        "Developed a Retirement Calculator that analyses a user’s current financial situation and recommends retirement savings goals. Deployed a chatbot offering personalised financial advice. Grouped similar users with similar retiremental goals and used monte carlo simulations to predict outcomes.",
+      description: "Retirement Planner",
       tags: [
         {
           name: "prediction",
@@ -317,8 +362,7 @@ import {
     },
     {
       name: "ResuGenius",
-      description:
-        "Created a Resume Validator Model to streamline the process of Recruitment. Scored User's profiles by comparing their Github Profiles. Facilitated Job Recommendations, and projects that can let the user land that job.",
+      description: "Resume Analyzer",
       tags: [
         {
           name: "textgeneration",
@@ -380,8 +424,7 @@ import {
     // },
     {
       name: "TubeBoost",
-      description:
-        "Created an ML model for Youtube Optimization, where I worked on getting Optimal Upload Time for a channel and also predict the Top-10 upcoming content creators.",
+      description: "Youtube Analytics",
       tags: [
         {
           name: "ml",
@@ -401,8 +444,7 @@ import {
     },
     {
       name: "WorkConnect",
-      description:
-        "Frontend Developer (React) for a D2C website where workers could bid and accept orders from clients and negotiate for the same.",
+      description: "Connecting Local Workers to Clients",
       tags: [
         {
           name: "react",
@@ -422,8 +464,7 @@ import {
     },
     {
       name: "Short-a-Thon",
-      description:
-        "Frontend Developer (React) for a Hackathon Organizing Website and also created an ML model for automating Resume Shortlisting using NLP.",
+      description: "Hackathon Shortlisting",
       tags: [
         {
           name: "react",
@@ -443,8 +484,7 @@ import {
     },
     {
       name: "VerifyU",
-      description:
-        "Full Stack Developer (React, Django) for a Document Verification website where I also worked on an ML model to check the credibility of the document using CNN, OCR and Ecryption using QR code..",
+      description: "Document Verification",
       tags: [
         {
           name: "react",
@@ -468,21 +508,22 @@ import {
     {
       name: " Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social.",
       description:
-        " Accepted in The D.A.R.E Workshop, International AAAI Conference on Web and Social Media 2024.",
-      image: healo,
+        "ICWSM 2024",
+      image: aaai,
+      source_code_link: "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_17",
     },
     {
       name: "Sentence Restructuring with User-Controlled Difficulty using NLP.",
       description:
-        "International Conference on Computing, Communication and Networking Technologies 2023, IEEE Xplore.",
-      image: yummatch,
+        "ICCCNT 2023",
+      image: ieee,
       source_code_link: "https://ieeexplore.ieee.org/document/10307165",
     },
     {
       name: "Infectious Disease Forecasting in India using LLM’s and Deep Learning.",
       description:
-        " Submitted in International Conference on Emerging Trends in Machine Learning, Data Science and Internet of Things 2024, Springer.",
-      image: tubeboost,
+        "ETMDIT 2024",
+      image: springer,
     },
   ];
 

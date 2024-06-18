@@ -34,13 +34,14 @@ const Navbar = () => {
                 setActive(link.title);
                 window.scrollTo(0,0);}}
               >
-              {link.id === 'contact' ? (
+              {/* {link.id === 'contact' ? (
                 <a href={`/#${link.id}`}>{link.title}</a>
               ) : link.id === 'home' ? (
                 <a href='/'>{link.title}</a>
               ) : (
                 <Link to={`/${link.id}`}>{link.title}</Link>
-              )}
+              )} */}
+              <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>
@@ -66,11 +67,12 @@ const Navbar = () => {
                   setActive(link.title)
                 }}
                 >
-                  {link.id === 'contact' ? (
+                  {/* {link.id === 'contact' ? (
                     <a href={`/#${link.id}`}>{link.title}</a>
                   ) : (
                     <Link to={`/${link.id}`}>{link.title}</Link>
-                  )} 
+                  )}  */}
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>

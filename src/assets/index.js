@@ -25,11 +25,15 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import antariksh from './company/antariksh.jpeg';
-import infiheal from './company/infiheal.png'
+import infiheal from './company/infiheal.jpg'
 import synapse from './company/synapse.jpeg'
 import unicode from './company/unicode.jpeg'
-import iitp from './company/iitp.jpeg'
-import simppl from './company/simppl.png'
+import iitp from './company/iitp.jpg'
+import simppl from './company/simppl.jpg'
+import ieee from './company/ieee.jpg'
+import avrio from './company/avrio.jpg'
+import aaai from './company/aaai.jpg'
+import springer from './company/springer.jpg'
 import simppl_image from './company/simppl_image.jpg'
 import synapse_image from './company/synapse_image.jpg'
 import antariksh_image from './company/antariksh_image.jpg'
@@ -54,6 +58,7 @@ import irc24 from './pictures/irc24.jpg'
 import irc23 from './pictures/irc23.jpg'
 import ercr23 from './pictures/ercr23.jpg'
 import isdc24 from './pictures/isdc24.jpg'
+import profile from './pictures/Chaitya_Profile.jpeg'
 
 import healo from './pictures/healo.jpeg'
 import yummatch from './pictures/yummatch.png'
@@ -129,4 +134,9 @@ export {
   tubeboost,
   analysisLottie,
   contactLottie,
+  profile,
+  avrio,
+  springer,
+  aaai,
+  ieee
 };
