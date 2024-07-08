@@ -73,7 +73,7 @@ const About = () => {
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
       <span className='font-bold'>Data Visualization and Storage:</span> BigQuery, Google Cloud Platform, Amazon Web Services, Docker, Linux, 
-      PostGreSQL, Google Analytics, Airflow, Prefect, Grafana, Metabase, CouchDB, Victoria Metrics Database, R.
+      PostGreSQL, Google Analytics, Airflow, Prefect, Grafana, PowerBi, CouchDB, Victoria Metrics Database, R.
     </motion.p>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}

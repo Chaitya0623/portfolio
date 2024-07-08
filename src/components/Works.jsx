@@ -85,34 +85,13 @@ const PublicationCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[200px]'>
+          <a href={source_code_link} target='_blank' rel='noopener noreferrer' className='block w-full h-full'>
           <img
             src={image}
             alt='project_image'
             className='w-full h-full object-fit rounded-2xl'
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              {/* <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              /> */}
-              {source_code_link && (
-              <a
-                href={source_code_link}
-                className='text-white-100 w-1/2 h-1/2 font-bold tracking-wider block'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                {'🔗'}
-              </a>
-            )}
-            </div>
-          </div>
+          </a>
         </div>
 
         <div className='mt-5'>
