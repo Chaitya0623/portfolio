@@ -182,14 +182,14 @@ import {
   
   const internships = [
     {
-      name: "Data Science Intern",
-      description: "Jun 2024 - Present",
-      image: avrio,
+      name: "Research Engineer",
+      description: "Aug 2023 - Present",
+      image: simppl,
     },
     {
-      name: "Research Engineer",
-      description: "Aug 2023 - Jun 2024",
-      image: simppl,
+      name: "Data Science Intern",
+      description: "Jun 2024 - Jul 2024",
+      image: avrio,
     },
     {
       name: "Research Intern",
@@ -294,7 +294,7 @@ import {
     },
     {
       name: "Machine Learning Head",
-      description: "Sep 2022 - Present",
+      description: "Sep 2022 - Jul 2024",
       image: synapse,
     },
     {
