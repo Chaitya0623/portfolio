@@ -28,32 +28,33 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[200px]'>
+          <a href={source_code_link} target='_blank' rel='noopener noreferrer' className='block w-full h-full'>
           <img
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            {/* <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div> */}
-          </div>
+          </a>
         </div>
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px] text-center'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px] text-center'>{description}</p>
+          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          {source_code_link && (
+          <a
+            href={source_code_link}
+            className='text-white-100 text-[19px] font-bold tracking-wider block'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {'🔗'}
+          </a>
+        )}
+          </div> */}
         </div>
 
-        {/* <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='flex flex-wrap gap-2'>
           {tags && tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -62,7 +63,7 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-        </div> */}
+        </div>
       </Tilt>
     </motion.div>
   );
@@ -144,7 +145,7 @@ const Experience = () => {
     </div>
 
     <motion.div variants={textVariant()}>
-      <h2 className={`${styles.sectionHeadText} text-center mt-10`}>Positions of Responsibility</h2>
+      <h2 className={`${styles.sectionHeadText} text-center mt-20`}>Positions of Responsibility</h2>
     </motion.div>
 
 

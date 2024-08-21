@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
+import { About, Contact, Education, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
               <Navbar/>
               <Hero/>
               <About/>
+              <Education />
               <Experience />
               <Feedbacks />
               <Works />

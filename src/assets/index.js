@@ -32,6 +32,7 @@ import iitp from './company/iitp.jpg'
 import simppl from './company/simppl.jpg'
 import ieee from './company/ieee.jpg'
 import avrio from './company/avrio.jpg'
+import mu from './company/mu.png'
 import aaai from './company/aaai.jpg'
 import springer from './company/springer.jpg'
 import simppl_image from './company/simppl_image.jpg'
@@ -138,5 +139,6 @@ export {
   avrio,
   springer,
   aaai,
-  ieee
+  ieee,
+  mu
 };

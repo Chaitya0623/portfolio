@@ -54,7 +54,8 @@ import {
     avrio,
     aaai,
     springer,
-    ieee
+    ieee,
+    mu
   } from "../assets";
   
   export const navLinks = [
@@ -67,6 +68,10 @@ import {
       title: "About",
     },
     {
+      id: "education",
+      title: "Education",
+    },
+    {
       id: "experience",
       title: "Experience",
     },
@@ -76,7 +81,7 @@ import {
     },
     {
       id: "projects",
-      title: "Projects",
+      title: "Publications",
     },
     {
       id: "contact",
@@ -179,6 +184,14 @@ import {
       icon: docker,
     },
   ];
+
+  const educations = [
+    {
+      name: "Bachelor of Technology in Computer Engineering",
+      description: "Dec 2021 - Present",
+      image: mu,
+    },
+  ];
   
   const internships = [
     {
@@ -190,101 +203,21 @@ import {
       name: "Data Science Intern",
       description: "Jun 2024 - Jul 2024",
       image: avrio,
+      source_code_link: 'https://drive.google.com/file/d/1iu6dacFnaoIrl_heeaLTlc4_-LCuH5-_/view?usp=sharing'
     },
     {
       name: "Research Intern",
       description: "May 2023 - Nov 2024",
       image: iitp,
+      source_code_link: 'https://drive.google.com/file/d/1zICRw2wSiXFHn-5j9oVW-HJi2DV6EPoJ/view?usp=drive_link'
     },
     {
       name: "Artificial Intelligence Intern",
       description: "Jun 2023 - Sep 2024",
       image: infiheal,
+      source_code_link: 'https://drive.google.com/file/d/1cyLLDPNwz8lxWwtF4hkLXSRJF-b33FuX/view?usp=sharing'
     },
-    // {
-    //   title: "Research Engineer",
-    //   company_name: "SimPPL",
-    //   icon: simppl,
-    //   iconBg: "#383E56",
-    //   date: "Aug 2023 - Present",
-    //   image: simppl_image,
-    //   points: [
-    //     "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
-    //     "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
-    //     "UUtilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%.",
-    //   ],
-    // },
-    // {
-    //   title: "Research Intern",
-    //   company_name: "IIT Patna",
-    //   icon: iitp,
-    //   iconBg: "#383E56",
-    //   date: "May 2023 - Nov 2023",
-    //   link: "https://drive.google.com/file/d/1E9HxIH85tDnzHSNA6WqF-WKthT0KHCo0/view?usp=drive_link",
-    //   linkname: "Certificate 🔗",
-    //   points: [
-    //     "Curated a custom dataset of 250,000+ Ethereum transactions collected from various sources, classified as fraudulent or legitimate.",
-    //     "Classified 5000+ unique nodes using Multiheaded Temporal Graph Attention Layers based on transactional patterns & behaviours.",
-    //     "Utilized the Directed Random Walk Algorithm to facilitate efficient detection of fraud accounts, achieving an accuracy of 85%",
-    //   ],
-    // },
-    // {
-    //   title: "Artificial Intelligence Intern",
-    //   company_name: "Infiheal",
-    //   icon: infiheal,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jun 2023 - Sep 2023",
-    //   link: "https://drive.google.com/file/d/1cyLLDPNwz8lxWwtF4hkLXSRJF-b33FuX/view?usp=drive_link",
-    //   linkname: "Recommendation 🔗",
-    //   points: [
-    //     "Optimized a therapist-toned retriever-generative chatbot, enhancing its accuracy by 4% using LLM's, LangChains, and Haystacks.",
-    //     "Identified the causes of depression using multilabel zero-shot classification on 500,000+ texts, achieving an accuracy of 93%.",
-    //     "Deployed models on Amazon Web Services (AWS) utilizing Terraforms and Docker, cutting the response time by 1-2 seconds.",
-    //     "Spearheaded a team of 8 newer interns in developing semantic datasets using transformer-based text generative models."
-    //   ],
-    // },
   ];
-
-  // const positionsofresponsibility = [
-  //   {
-  //     title: "Coding Head",
-  //     company_name: "DJS Antariksh",
-  //     icon: antariksh,
-  //     iconBg: "#383E56",
-  //     date: "May 2022 - Present",
-  //     image: antariksh_image,
-  //     points: [
-  //       "Led a 30+ member Coding Department within a 150+ member Rover and Drone Team, trained juniors in the field of robotics.",
-  //       "Participated and secured victories in multiple International Competitions which played an important role in pioneering International Rover Competition culture in India, thereby guiding and assisting 4+ teams in establishing their rover teams.",
-  //       "Performed Data Analysis on data collected from pH, atmospheric pressure, water and other sensors to discover the presence of life in soil. Designed an annotated dataset for object detection, trained a YoloV8 model in PyTorch achieving 89% accuracy.",
-  //       "Utilized Robot Operating Systems to facilitate Autonomous Navigation and Robotic Arm Movements. Developed the Team website, and a GUI Interface with React, integrated with ROS for camera feeds, data visualizations, and Rover Control.",
-  //       "Co-authored comprehensive documentation to support competition qualification, ensuring precise records of project details."
-  //     ],
-  //   },
-  //   {
-  //     title: "Machine Learning Head",
-  //     company_name: "Synapse",
-  //     icon: synapse,
-  //     iconBg: "#E6DEDD",
-  //     date: "Sep 2022 - Present",
-  //     image: synapse_image,
-  //     points: [
-  //       "Mentored 50+ mentees with personalised training in simplifying Machine Learning concepts and enhancing Research Papers writing.",
-  //       "Organized a national hackathon for 1800+ participants, gave speaker sessions to 500+ students to kickstart their AI/ML Journey",
-  //     ],
-  //   },
-  //   {
-  //     title: "Full Stack Developer (Django)",
-  //     company_name: "DJ Unicode",
-  //     icon: unicode,
-  //     iconBg: "#E6DEDD",
-  //     date: "Oct 2022 - Aug 2023",
-  //     points: [
-  //       "Wrote a Research Paper on Sentence Restructuring with User-Controlled Difficulty using NLP.",
-  //       "Implemented frontend pages using Figma and React. Developed an Internship Recommender System integrated with Django.",
-  //     ],
-  //   },
-  // ];
   
   const positionsofresponsibility = [
     {
@@ -380,48 +313,6 @@ import {
       image: resugenius,
       source_code_link: "https://github.com/Chaitya0623/DataHack_5_TechTinkerers",
     },
-    // {
-    //   name: "Healo",
-    //   description:
-    //     "Created a Mental Health Chatbot using Neural Networks in Deep Learning and NLP. Transformers using BERT were used to provide sentiment analysis to predict the mental health risk level of the user.",
-    //   tags: [
-    //     {
-    //       name: "nlp",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "machinelearning",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "transformers",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: healo,
-    //   source_code_link: "https://github.com/Chaitya0623/Healo",
-    // },
-    // {
-    //   name: "YumMatch",
-    //   description:
-    //     "Formulated a Food Recommendation System which recommends food combos with the help of Association Rule using Apriori Algorithm. It also shows the most popular combos based on value counts.",
-    //   tags: [
-    //     {
-    //       name: "datascience",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "apriori",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "machinelearning",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: yummatch,
-    //   source_code_link: "https://chaitya0623-yummatch-app-840g8s.streamlit.app/",
-    // },
     {
       name: "TubeBoost",
       description: "Youtube Analytics",
@@ -527,4 +418,4 @@ import {
     },
   ];
 
-  export { services, technologies, internships, positionsofresponsibility, testimonials, projects, publications, competitions };
+  export { services, technologies, internships, positionsofresponsibility, testimonials, educations, projects, publications, competitions };
