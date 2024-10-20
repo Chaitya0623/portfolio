@@ -34,6 +34,8 @@ import ieee from './company/ieee.jpg'
 import avrio from './company/avrio.jpg'
 import mu from './company/mu.png'
 import aaai from './company/aaai.jpg'
+import elsevier from './company/elsevier.png'
+import nationalconference from './company/nationalconference.png'
 import springer from './company/springer.jpg'
 import simppl_image from './company/simppl_image.jpg'
 import synapse_image from './company/synapse_image.jpg'
@@ -144,5 +146,7 @@ export {
   ieee,
   mu,
   erc23o,
-  erc24
+  erc24,
+  elsevier,
+  nationalconference
 };

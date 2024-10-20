@@ -57,7 +57,9 @@ import {
     ieee,
     mu,
     erc23o,
-    erc24
+    erc24,
+    nationalconference,
+    elsevier
   } from "../assets";
   
   export const navLinks = [
@@ -416,24 +418,30 @@ import {
   
   const publications = [
     {
-      name: " Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social.",
+      name: " Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social",
       description:
         "ICWSM 2024",
       image: aaai,
       source_code_link: "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_17",
     },
     {
-      name: "Sentence Restructuring with User-Controlled Difficulty using NLP.",
+      name: "Sentence Restructuring with User-Controlled Difficulty using NLP",
       description:
         "ICCCNT 2023",
       image: ieee,
       source_code_link: "https://ieeexplore.ieee.org/document/10307165",
     },
     {
-      name: "Infectious Disease Forecasting in India using LLM’s and Deep Learning.",
+      name: "Cyberbullying or just Sarcasm? Unmasking Coordinated Networks on Reddit",
       description:
-        "ETMDIT 2024",
-      image: springer,
+        "NCACSI 2024",
+      image: nationalconference,
+    },
+    {
+      name: "Infectious Disease Forecasting in India using LLM’s and Deep Learning",
+      description:
+        "ICECMSN 2024",
+      image: elsevier,
     },
   ];
 
