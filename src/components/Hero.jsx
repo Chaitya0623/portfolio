@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="sm:ml-[650px] sm:mt-0">
+      <div className="sm:ml-[650px] sm:top-[220px]">
         <Lottie options={defaultOptions} height={window.innerWidth < 600 ? 300 : 500} width={window.innerWidth < 600 ? 360 : 600}/>
       </div>
       {/* <ComputersCanvas /> */}

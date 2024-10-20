@@ -57,7 +57,9 @@ import xtract from './pictures/xtract.png'
 import unscript23 from './pictures/unscript23.png'
 import irc24 from './pictures/irc24.jpg'
 import irc23 from './pictures/irc23.jpg'
+import erc23o from './pictures/erc23o.png'
 import ercr23 from './pictures/ercr23.jpg'
+import erc24 from './pictures/erc24.jpg'
 import isdc24 from './pictures/isdc24.jpg'
 import profile from './pictures/Chaitya_Profile.jpeg'
 
@@ -140,5 +142,7 @@ export {
   springer,
   aaai,
   ieee,
-  mu
+  mu,
+  erc23o,
+  erc24
 };

@@ -55,7 +55,9 @@ import {
     aaai,
     springer,
     ieee,
-    mu
+    mu,
+    erc23o,
+    erc24
   } from "../assets";
   
   export const navLinks = [
@@ -222,7 +224,7 @@ import {
   const positionsofresponsibility = [
     {
       name: "Coding Head",
-      description: "May 2022 - Present",
+      description: "May 2022 - Oct 2024",
       image: antariksh,
     },
     {
@@ -246,29 +248,46 @@ import {
   ];
   const competitions = [
     {
+      description: "Sep 2024",
+      name: "11th in European Rover Challenge 2024, Krakow, Poland",
+      image: erc24,
+      source_code_link: 'https://drive.google.com/file/d/1VvNS0gHNt06U3JT0h625zmNIB_wM1AtE/view?usp=sharing'
+    },
+    {
       description: "Jan 2024",
       name: "3rd in International Rover Challenge 2024, Coimbatore, India",
       image: irc24,
+      source_code_link: 'https://drive.google.com/file/d/18rtZfjURxV4I95nVfLhkRLE8Q28VhWqk/view?usp=sharing'
     },
     {
       description: "Jan 2024",
       name: "2nd in International Space Drone Challenge 2024, Coimbatore, India",
       image: isdc24,
+      source_code_link: 'https://drive.google.com/file/d/1lcH92XxoE5IbHKgsqiJxA80tAx9vNUtM/view?usp=sharing'
     },
     {
       description: "Sep 2023",
       name: "2nd in European Rover Challenge 2023 (Remote)",
       image: ercr23,
+      source_code_link: 'https://drive.google.com/file/d/1I5u-hSH6rCUEUV3OIfHr3g30G2LXsoEO/view?usp=sharing'
+    },
+    {
+      description: "Sep 2023",
+      name: "10th in European Rover Challenge 2023 (Onsite)",
+      image: erc23o,
+      source_code_link: 'https://drive.google.com/file/d/18rtZfjURxV4I95nVfLhkRLE8Q28VhWqk/view?usp=sharing'
     },
     {
       description: "Jan 2023",
       name: "8th in International Rover Challenge 2024, Bangalore, India",
       image: irc23,
+      source_code_link: 'https://drive.google.com/file/d/1qnUZ087fVU60YNw_nbVyLplaaZ0lWTlf/view?usp=sharing'
     },
     {
       description: "Nov 2022",
       name: "Winner of X-tract 2022",
       image: xtract,
+      source_code_link: 'https://drive.google.com/file/d/1ETWASIe5M1jjnyCeKaR-nWeQ2eBgXvj7/view?usp=sharing'
     },
   ];
   

@@ -47,38 +47,37 @@ const About = () => {
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
       I am Chaitya Shah, a 4th Year Computer Engineering Undergraduate from 
       Dwarkadas J. Sanghvi College of Engineering, Mumbai. Currently, I am leveraging my skills
-      as a Data Science Intern at Avrio Energy.
+      as a Research Engineer at SimPPL.
     </motion.p>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      Being the Coding Head at DJS Antariksh, our college's Official Martian Rover Team
-      has given me the opportunity to represent my country at an International Level and
-      win multiple Competitions. Furthermore, as one of the Machine Learning Heads at our
-      College's AI/ML Committee Synapse, I had the priviledge of sharing my experiences with
-      my juniors and helping them write Research Papers. My experience working with startups, 
-      non profit organizations and research internships along with Research Papers published 
-      in International Conferences are helping me learn and contribute to the Realms of Data Science.
-      As we witness the ever-growing integration of Businesses and Information Technology, I
-      wish leverage my expertise to bridge this gap.
+      My early decision to pursue data science has allowed me to explore diverse fields; from healthcare to social sciences, energy, and robotics. 
+      As the Coding Head of DJS Antariksh, our college’s Martian Rover team, I’ve proudly represented India in international competitions, 
+      securing multiple podium finishes. I also serve as a Machine Learning Head at Synapse, our AI/ML committee, where I mentor juniors and 
+      help them with research publications. My primary interests lie in understanding human behavior through data, exploring causal relationships,
+       and applying machine learning to solve real-world problems.
     </motion.p>
     </div>
     </div>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-4 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>Languages and Tools:</span> C, C++, Python, JavaScript, MySQL, Git, Figma, Robot Operating Systems, Arduino, LaTeX.
+      <span className='font-bold'>Languages and Tools:</span> C, C++, Python, JavaScript, R, MATLAB, Git, Figma, Robot Operating Systems, Arduino,
+       LaTeX.
     </motion.p>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>Data Visualization and Storage:</span> BigQuery, Google Cloud Platform, Amazon Web Services, Docker, Linux, 
-      PostGreSQL, Google Analytics, Airflow, Prefect, Grafana, PowerBi, CouchDB, Victoria Metrics Database, R.
+      <span className='font-bold'>DLibraries & Frameworks:</span> Numpy, Pandas, Seaborn, Matplotlib, Scikit-Learn, Keras, TensorFlow, 
+      PyTorch, OpenCV, BeautifulSoup, NLTK, SQLAlchemy, Prometheus, HTML, CSS, React.js, Three.js, Next.js, Django Rest Framework, Flask, 
+      FastAPI, Streamlit.
     </motion.p>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>Web Development:</span> HTML, CSS, Bootstrap, TailwindCSS, Three.js, React, Django, Flask, FastAPI, Streamlit.
+      <span className='font-bold'>Databases, Analytics & Cloud:</span> MySQL, PostgreSQL, Looker Studio, Google Analytics, PowerBi, BigQuery, GCP, AWS, Docker,
+       Linux.
     </motion.p>
 
     {/* <div className='mt-10 flex flex-wrap gap-10 justify-center align-center'>

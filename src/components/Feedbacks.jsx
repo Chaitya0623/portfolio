@@ -33,6 +33,11 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
           </a>
+          {source_code_link && (
+          <span className='absolute top-3 right-3 text-white text-[24px]'>
+            🔗
+          </span>
+        )}
         </div>
 
         <div className='mt-5'>
