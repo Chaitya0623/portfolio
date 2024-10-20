@@ -30,9 +30,15 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="sm:ml-[650px] sm:top-[220px]">
-        <Lottie options={defaultOptions} height={window.innerWidth < 600 ? 300 : 500} width={window.innerWidth < 600 ? 360 : 600}/>
-      </div>
+      <div className="flex flex-col sm:flex-row sm:ml-[650px] sm:mt-0 mt-5">
+  <div className="flex justify-center items-center">
+    <Lottie
+      options={defaultOptions}
+      height={window.innerWidth < 600 ? 200 : window.innerWidth < 900 ? 300 : 500} // Adjust heights
+      width={window.innerWidth < 600 ? 240 : window.innerWidth < 900 ? 360 : 600} // Adjust widths
+    />
+  </div>
+</div>
       {/* <ComputersCanvas /> */}
     </section>
   )
