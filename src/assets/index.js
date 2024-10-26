@@ -63,6 +63,7 @@ import erc23o from './pictures/erc23o.png'
 import ercr23 from './pictures/ercr23.jpg'
 import erc24 from './pictures/erc24.jpg'
 import isdc24 from './pictures/isdc24.jpg'
+import karate from './pictures/karate.png'
 import profile from './pictures/Chaitya_Profile.jpeg'
 
 import healo from './pictures/healo.jpeg'
@@ -147,6 +148,7 @@ export {
   mu,
   erc23o,
   erc24,
+  karate,
   elsevier,
   nationalconference
 };

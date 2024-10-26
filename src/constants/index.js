@@ -58,6 +58,7 @@ import {
     mu,
     erc23o,
     erc24,
+    karate,
     nationalconference,
     elsevier
   } from "../assets";
@@ -290,6 +291,12 @@ import {
       name: "Winner of X-tract 2022",
       image: xtract,
       source_code_link: 'https://drive.google.com/file/d/1ETWASIe5M1jjnyCeKaR-nWeQ2eBgXvj7/view?usp=sharing'
+    },
+    {
+      description: "Dec 2014",
+      name: "Black Belt in Karate",
+      image: karate,
+      source_code_link: 'https://drive.google.com/file/d/1bPpXtGKYvZK3hi-JILjeXr9OO4CYHGqW/view?usp=sharing'
     },
   ];
   
