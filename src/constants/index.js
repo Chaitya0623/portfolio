@@ -203,6 +203,7 @@ import {
       name: "Research Engineer",
       description: "Aug 2023 - Present",
       image: simppl,
+      source_code_link: "https://simppl.org/newsanalytics",
     },
     {
       name: "Data Science Intern",
@@ -432,6 +433,13 @@ import {
       source_code_link: "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_17",
     },
     {
+      name: "Cyberbullying or just Sarcasm? Unmasking Coordinated Networks on Reddit",
+      description:
+        "NCACSI 2024",
+      image: nationalconference,
+      source_code_link: "https://ijercse.com/article/1%20November%202024%20IJERCSE.pdf",
+    },
+    {
       name: "Sentence Restructuring with User-Controlled Difficulty using NLP",
       description:
         "ICCCNT 2023",
@@ -439,15 +447,9 @@ import {
       source_code_link: "https://ieeexplore.ieee.org/document/10307165",
     },
     {
-      name: "Cyberbullying or just Sarcasm? Unmasking Coordinated Networks on Reddit",
-      description:
-        "NCACSI 2024",
-      image: nationalconference,
-    },
-    {
       name: "Infectious Disease Forecasting in India using LLM’s and Deep Learning",
       description:
-        "ICECMSN 2024",
+        "ICMLDE 2024",
       image: elsevier,
     },
   ];
