@@ -213,7 +213,7 @@ import {
     //   image: columbia,
     // },
     {
-      name: "How my International Mars Rover Team Shaped Me",
+      name: "Lessons from Leading an International Mars Rover Team",
       description:
         "Coming Soon",
       image: antariksh,
