@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { About, Contact, Education, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
+import { About, Contact, Education, Experience, Navbar, Works, Blogs} from './components'
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -18,16 +18,32 @@ const App = () => {
             <Route path="/" element={              
             <>
               <Navbar/>
-              <Hero/>
+              {/* <Hero/> */}
               <About/>
               <Education />
               <Experience />
-              <Feedbacks />
-              <Works />
+              
+            </>}>
+            </Route>
+            <Route path='/contact' element={
+              <>
+              <Navbar/>
               {/* <div className="relative z-0"> */}
                 <Contact/>
                 {/* <StarsCanvas/> */}
               {/* </div> */}
+            </>}>
+            </Route>
+            <Route path='/projects' element={
+              <>
+              <Navbar/>
+              <Works/>
+            </>}>
+            </Route>
+            <Route path='/blogs' element={
+              <>
+              <Navbar/>
+              <Blogs/>
             </>}>
             </Route>
             {/* <Route path="/home" element={              

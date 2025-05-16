@@ -25,8 +25,8 @@ const Hero = () => {
             Chaitya <span className="text-[#1e50bd]">Shah</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            An Aspiring Data Scientist 
-            <br className="sm:block hidden"/> and a Machine Learning Developer.
+            Building GenAI Products
+            <br className="sm:block hidden"/> Ideate • Build • Deploy • Scale
           </p>
         </div>
       </div>

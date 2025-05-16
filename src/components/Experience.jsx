@@ -2,7 +2,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { motion } from "framer-motion"
 import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
-import { internships, positionsofresponsibility } from '../constants'
+import { internships } from '../constants'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { github } from "../assets";
 
@@ -25,7 +25,8 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
+
       >
         <div className='relative w-full h-[200px]'>
           <a href={source_code_link} target='_blank' rel='noopener noreferrer' className='block w-full h-full'>
@@ -149,53 +150,7 @@ const Experience = () => {
       ))}
     </div>
 
-    <motion.div variants={textVariant()}>
-      <h2 className={`${styles.sectionHeadText} text-center mt-20`}>Positions of Responsibility</h2>
-    </motion.div>
-
-
-
-    <div className='mt-10 flex flex-wrap gap-7 justify-center'>
-      {positionsofresponsibility.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project} />
-      ))}
-    </div>
   </>
-  //   <>
-  //   <motion.div variants={textVariant()}>
-  //     <h2 className={`${styles.sectionHeadText} text-center`}>
-  //       Internships
-  //     </h2>
-  //   </motion.div>
-
-  //   <div className='mt-10 flex flex-col'>
-  //     <VerticalTimeline>
-  //       {internships.map((experience, index) => (
-  //         <ExperienceCard
-  //           key={`experience-${index}`}
-  //           experience={experience}
-  //         />
-  //       ))}
-  //     </VerticalTimeline>
-  //   </div>
-
-  //   <motion.div variants={textVariant()}>
-  //     <h2 className={`${styles.sectionHeadText} text-center mt-10`}>
-  //       Positions Of Responsibility
-  //     </h2>
-  //   </motion.div>
-
-  //   <div className='mt-10 flex flex-col'>
-  //     <VerticalTimeline>
-  //       {positionsofresponsibility.map((experience, index) => (
-  //         <ExperienceCard
-  //           key={`experience-${index}`}
-  //           experience={experience}
-  //         />
-  //       ))}
-  //     </VerticalTimeline>
-  //   </div>
-  // </>
   )
 }
 

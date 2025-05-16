@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import 'react-vertical-timeline-component/style.min.css'
 import { styles } from '../styles'
-import { educations, internships, positionsofresponsibility } from '../constants'
+import { educations } from '../constants'
 import SectionWrapper from '../hoc/SectionWrapper'
 
 import { Tilt } from 'react-tilt'
@@ -23,7 +23,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
       >
         <div className='relative w-full h-[200px]'>
           <a href={source_code_link} target='_blank' rel='noopener noreferrer' className='block w-full h-full'>

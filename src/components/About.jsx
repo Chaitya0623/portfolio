@@ -2,7 +2,6 @@ import React from 'react'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { profile } from '../assets'
@@ -31,54 +30,34 @@ const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-      <h2 className={`${styles.sectionHeadText} text-center mt-[-350px] sm:mt-[-50px]`}>
-        About Me
+      <h2 className={`${styles.sectionHeadText} text-center mt-[0px] sm:mt-[30px]`}>
+        Chaitya Shah
       </h2>
     </motion.div>
 
-    <div class="sm:flex items-center justify-center"> 
+    <div className="sm:flex items-center justify-center"> 
 
-    <div class="sm:w-1/3 mt-5 sm:mt-0 mb-5 sm:mb-0 flex justify-center items-center">  
-      <img src={profile} alt="Your Photo" class="rounded-full w-70 h-70 object-cover shadow-inner border-blue-900 border-4 glow" />
+    <div className="sm:w-1/3 mt-5 sm:mt-0 mb-5 sm:mb-0 flex justify-center items-center">  
+      <img src={profile} alt="Your Photo" className="rounded-[20px] w-70 h-70 object-cover border border-[#000000] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]" />
     </div>
 
-    <div class="w-full md:w-2/3 sm:ml-10 flex flex-col items-start">
+    <div className="w-full md:w-2/3 sm:ml-10 flex flex-col items-start">
     <motion.p variants={fadeIn("","",0.1,0.1)}
     className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      I am Chaitya Shah, a 4th Year Computer Engineering Undergraduate from 
-      Dwarkadas J. Sanghvi College of Engineering, Mumbai. Currently, I am leveraging my skills
-      as a Research Engineer at SimPPL.
+      I am an upcoming Data Science grad student at Columbia University with a strong foundation in AI, ML, and full-stack development. 
+      I’ve led cross-functional teams to build AI-powered platforms from the ground up, working alongside nonprofit leadership to develop new 
+      product vertical with backing from Mozilla and Google.
     </motion.p>
 
     <motion.p variants={fadeIn("","",0.1,0.1)}
-    className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      My early decision to pursue data science has allowed me to explore diverse fields; from healthcare to social sciences, energy, and robotics. 
-      As the Coding Head of DJS Antariksh, our college’s Martian Rover team, I’ve proudly represented India in international competitions, 
-      securing multiple podium finishes. I also serve as a Machine Learning Head at Synapse, our AI/ML committee, where I mentor juniors and 
-      help them with research publications. My primary interests lie in understanding human behavior through data, exploring causal relationships,
-       and applying machine learning to solve real-world problems.
+    className='mt-5 text-secondary text-[17px] leading-[30px] text-center'>
+      My work focuses on building data-driven systems end to end; from developing predictive models and GenAI applications to deploying scalable 
+      solutions on AWS with Docker and Terraform. I've applied these skills across domains like social media analytics, mental health tech, and 
+      energy optimization, always aiming for measurable impact and real-world scalability. Always excited to explore opportunities at the 
+      intersection of AI and real-world problem-solving.
     </motion.p>
     </div>
     </div>
-
-    <motion.p variants={fadeIn("","",0.1,0.1)}
-    className='mt-4 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>Languages and Tools:</span> C, C++, Python, JavaScript, R, MATLAB, Git, Figma, Robot Operating Systems, Arduino,
-       LaTeX.
-    </motion.p>
-
-    <motion.p variants={fadeIn("","",0.1,0.1)}
-    className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>DLibraries & Frameworks:</span> Numpy, Pandas, Seaborn, Matplotlib, Scikit-Learn, Keras, TensorFlow, 
-      PyTorch, OpenCV, BeautifulSoup, NLTK, SQLAlchemy, Prometheus, HTML, CSS, React.js, Three.js, Next.js, Django Rest Framework, Flask, 
-      FastAPI, Streamlit.
-    </motion.p>
-
-    <motion.p variants={fadeIn("","",0.1,0.1)}
-    className='mt-2 text-secondary text-[17px] leading-[30px] text-center'>
-      <span className='font-bold'>Databases, Analytics & Cloud:</span> MySQL, PostgreSQL, Looker Studio, Google Analytics, PowerBi, BigQuery, GCP, AWS, Docker,
-       Linux.
-    </motion.p>
 
     {/* <div className='mt-10 flex flex-wrap gap-10 justify-center align-center'>
       {services.map((service,index) => (

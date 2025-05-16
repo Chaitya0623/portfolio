@@ -1,56 +1,16 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
     infiheal,
     unicode,
     iitp,
     synapse,
     antariksh,
     simppl,
-    simppl_image,
-    synapse_image,
-    antariksh_image,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    nlp,
-    ros,
-    django,
-    python,
-    ml,
     xtract,
-    unscript23,
     irc23,
     irc24,
     ercr23,
     isdc24,
-    healo,
-    yummatch,
-    shortathon,
-    verifyu,
-    workconnect,
-    tubeboost,
     retiral, 
-    resugenius,
     avrio,
     aaai,
     springer,
@@ -60,196 +20,76 @@ import {
     erc24,
     karate,
     nationalconference,
-    elsevier
+    elsevier,
+    columbia,
+    github_logo,
+    mcdonalds,
+    mental_health,
+    ethereum,
+    aiagent,
+    finance,
+    audienceanalytics
   } from "../assets";
   
   export const navLinks = [
-    {
-      id: "home",
-      title: "Home",
-    },
     {
       id: "about",
       title: "About",
     },
     {
-      id: "education",
-      title: "Education",
-    },
-    {
-      id: "experience",
-      title: "Experience",
-    },
-    {
-      id: "achievements",
-      title: "Achievements",
-    },
-    {
       id: "projects",
-      title: "Publications",
+      title: "Projects",
+    },
+    {
+      id: "blogs",
+      title: "Blogs",
+    },
+    {
+      id: "resume",
+      title: "Resume",
     },
     {
       id: "contact",
       title: "Contact",
     },
   ];
-  
-  const services = [
-    {
-      title: "Natural Language Processing",
-      // icon: web,
-    },
-    {
-      title: "OpenCV",
-      // icon: creator,
-    },
-    {
-      title: "Deep Learning",
-    },
-    {
-      title: "Graph Neural Networks",
-    },
-    {
-      title: "React",
-    },
-    {
-      title: "Django",
-    },
-    {
-      title: "Amazon Web Services",
-    },
-    {
-      title: "Google Cloud Platform",
-    },
-    {
-      title: "BigQuery",
-    },
-    {
-      title: "Docker",
-    },
-    {
-      title: "Robot Operating Systems",
-    },
-    {
-      title: "Arduino",
-    },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "ML",
-      icon: ml,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Django",
-      icon: django,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "nlp",
-      icon: nlp,
-    },
-    {
-      name: "python",
-      icon: python,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "ros",
-      icon: ros,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
 
   const educations = [
     {
+      name: "Masters of Science in Data Science",
+      description: "Aug 2025 - Dec 2026",
+      image: columbia,
+    },
+    {
       name: "Bachelor of Technology in Computer Engineering",
-      description: "Dec 2021 - Present",
+      description: "Dec 2021 - May 2025",
       image: mu,
     },
   ];
   
   const internships = [
     {
-      name: "Research Engineer",
-      description: "Aug 2023 - Present",
+      name: "Founding AI Engineer",
+      description: "Aug 2023 - May 2025",
       image: simppl,
-      source_code_link: "https://simppl.org/newsanalytics",
     },
     {
       name: "Data Science Intern",
       description: "Jun 2024 - Jul 2024",
       image: avrio,
-      source_code_link: 'https://drive.google.com/file/d/1iu6dacFnaoIrl_heeaLTlc4_-LCuH5-_/view?usp=sharing'
     },
     {
       name: "Research Intern",
       description: "May 2023 - Nov 2024",
       image: iitp,
-      source_code_link: 'https://drive.google.com/file/d/1zICRw2wSiXFHn-5j9oVW-HJi2DV6EPoJ/view?usp=drive_link'
     },
     {
       name: "Artificial Intelligence Intern",
       description: "Jun 2023 - Sep 2024",
       image: infiheal,
-      source_code_link: 'https://drive.google.com/file/d/1cyLLDPNwz8lxWwtF4hkLXSRJF-b33FuX/view?usp=sharing'
     },
   ];
-  
-  const positionsofresponsibility = [
-    {
-      name: "Coding Head",
-      description: "May 2022 - Oct 2024",
-      image: antariksh,
-    },
-    {
-      name: "Machine Learning Head",
-      description: "Sep 2022 - Jul 2024",
-      image: synapse,
-    },
-    {
-      name: "Full Stack Django Developer",
-      description: "Oct 2022 - Aug 2023",
-      image: unicode,
-    },
-  ]
 
-  const testimonials = [
-    {
-      description: "Nov 2022",
-      name: "Winner of X-tract 2022",
-      image: xtract,
-    },
-  ];
   const competitions = [
     {
       description: "Sep 2024",
@@ -293,165 +133,100 @@ import {
       image: xtract,
       source_code_link: 'https://drive.google.com/file/d/1ETWASIe5M1jjnyCeKaR-nWeQ2eBgXvj7/view?usp=sharing'
     },
-    {
-      description: "Dec 2014",
-      name: "Black Belt in Karate",
-      image: karate,
-      source_code_link: 'https://drive.google.com/file/d/1bPpXtGKYvZK3hi-JILjeXr9OO4CYHGqW/view?usp=sharing'
-    },
   ];
   
   const projects = [
     {
-      name: "Retiral",
-      description: "Retirement Planner",
-      tags: [
-        {
-          name: "prediction",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "chatbot",
-          color: "green-text-gradient",
-        },
-        {
-          name: "dataanalysis",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: retiral,
+      name: "Audience Analytics Product (Mozilla and Google Grants)",
+      description: "Developed the MVP for an AI-powered Newsroom analytics platform to boost engagement for 20K+ users",
+      image: audienceanalytics,
+    },
+    {
+      name: "AI Agent for Social Media Trend Analysis (UNICEF Incubated)",
+      description: "Analyzed 120K+ posts across multiple platforms to identify emerging trends",
+      image: aiagent,
+    },
+    {
+      name: "RAG based Mental Health Chatbot",
+      description: "Developed a RAG chatbot to provide reliable, context-aware mental health assistance",
+      image: mental_health,
+    },
+    {
+      name: "GenAI-Powered Financial Advisory Platform",
+      description: "Created a personalized savings insights engine with fine-tuned GPT model",
+      image: finance,
       source_code_link: "https://github.com/Chaitya0623/TechTitans_TIAA",
     },
     {
-      name: "ResuGenius",
-      description: "Resume Analyzer",
-      tags: [
-        {
-          name: "textgeneration",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "nlp",
-          color: "green-text-gradient",
-        },
-        {
-          name: "semanticsimilarity",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: resugenius,
-      source_code_link: "https://github.com/Chaitya0623/DataHack_5_TechTinkerers",
+      name: "Fraud Detection in Ethereum Transactions",
+      description: "Classified fraudulent nodes on 250K+ transactions based on behavioral patterns",
+      image: ethereum,
     },
     {
-      name: "TubeBoost",
-      description: "Youtube Analytics",
-      tags: [
-        {
-          name: "ml",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "datascience",
-          color: "green-text-gradient",
-        },
-        {
-          name: "streamlit",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tubeboost,
-      source_code_link: "https://innomer-streamlitdeployment-app-d362at.streamlit.app/",
-    },
-    {
-      name: "WorkConnect",
-      description: "Connecting Local Workers to Clients",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "marketing",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: workconnect,
-      source_code_link: "https://devfolio.co/projects/workconnect-7ac9",
-    },
-    {
-      name: "Short-a-Thon",
-      description: "Hackathon Shortlisting",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "machinelearning",
-          color: "green-text-gradient",
-        },
-        {
-          name: "django",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: shortathon,
-      source_code_link: "https://github.com/Chaitya0623/Hackniche_Console.io",
-    },
-    {
-      name: "VerifyU",
-      description: "Document Verification",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "django",
-          color: "green-text-gradient",
-        },
-        {
-          name: "opencv",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: verifyu,
-      source_code_link: "https://devfolio.co/projects/verifyu-aea2",
+      name: "Energy Optimization Across McDonald's Outlets",
+      description: "Engineered data pipelines to track appliance level consumption and reduce energy waste",
+      image: mcdonalds,
     },
   ];
   
   const publications = [
     {
-      name: " Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social",
+      name: "Can Social Media Platforms Transcend Political Labels? An Analysis of Neutral Conservations on Truth Social",
       description:
-        "ICWSM 2024",
+        "International AAAI Conference on Web and Social Media 2024",
       image: aaai,
       source_code_link: "https://workshop-proceedings.icwsm.org/abstract.php?id=2024_17",
     },
     {
+      name: "How do Government Decisions Influence Financial Markets? A Causal Approach",
+      description:
+        "Submitted in Knowledge Based Systems",
+      image: elsevier,
+    },
+    {
       name: "Cyberbullying or just Sarcasm? Unmasking Coordinated Networks on Reddit",
       description:
-        "NCACSI 2024",
+        "National Conference on Advanced Computer Science and Information Technology 2024",
       image: nationalconference,
       source_code_link: "https://ijercse.com/article/1%20November%202024%20IJERCSE.pdf",
     },
     {
       name: "Sentence Restructuring with User-Controlled Difficulty using NLP",
       description:
-        "ICCCNT 2023",
+        "International Conference on Computing Communication and Networking Technologies 2023",
       image: ieee,
       source_code_link: "https://ieeexplore.ieee.org/document/10307165",
     },
     {
       name: "Infectious Disease Forecasting in India using LLM’s and Deep Learning",
       description:
-        "ICMLDE 2024",
-      image: elsevier,
+        "National Conference on Bigdata Analysis 2024",
+      image: nationalconference,
+      source_code_link: "https://propulsiontechjournal.com/index.php/journal/article/view/8845",
+    },
+  ];
+  const personal_blogs = [
+    // {
+    //   name: "The Story Behind My Columbia Admit",
+    //   description:
+    //     "Coming Soon",
+    //   image: columbia,
+    // },
+    {
+      name: "How my International Mars Rover Team Shaped Me",
+      description:
+        "Coming Soon",
+      image: antariksh,
+    },
+  ];
+  const technical_blogs = [
+    {
+      name: "Tech Guides",
+      description:
+        "My Personal Notes",
+      image: github_logo,
+      source_code_link: "https://github.com/Chaitya0623/Documentation/wiki",
     },
   ];
 
-  export { services, technologies, internships, positionsofresponsibility, testimonials, educations, projects, publications, competitions };
+  export { internships, educations, projects, publications, competitions, personal_blogs, technical_blogs };

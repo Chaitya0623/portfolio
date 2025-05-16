@@ -1,15 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
 
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import SectionWrapper from '../hoc/SectionWrapper'
-import { github, linkedin, instagram } from "../assets";
+import { github, linkedin, gmail } from "../assets";
 
 import Lottie from 'react-lottie'
-import { contactLottie } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,16 +34,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_behdkv1',
-        'template_odf7vu4',
+        'service_z9j61jl',
+        'template_h5fz6fd',
         {
           from_name: form.name,
           to_name: "Chaitya Shah",
           from_email: form.email,
-          to_email: "chaityatest@gmail.com",
+          to_email: "chaitya0623@gmail.com",
           message: form.message,
         },
-        'QRmcR8881LRgaKGm6'
+        'u0kZg_JSHlRi7WQNf'
       )
       .then(
         () => {
@@ -68,100 +65,83 @@ const Contact = () => {
       );
   };
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: contactLottie,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
 
   return (
     <div
-      className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:mt-[-40px] mt-[-250px]`}
+      className={`sm:flex sm:justify-center gap-10 sm:mt-[-15px] mt-[100px] min-h-[calc(100vh-210px)]`}
     >
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] sm:max-w-[600px] bg-primary p-5 rounded-2xl border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
       >
         <h3 className={`${styles.sectionHeadText} flex justify-center`}>Contact</h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-2 flex flex-col gap-5'
+          className='flex flex-col gap-3'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-3'>What's your full name?</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What is your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="Your Name"
+              className='bg-[#222222] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-3'>Where can I reach you?</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What is your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="Email Address"
+              className='bg-[#222222] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='text-white font-medium mb-3'>How can I help you?</span>
             <textarea
               rows={3}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What do you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder='Write your message here'
+              className='bg-[#222222] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="mt-2 flex justify-center">
+            <button
+              type='submit'
+              className='bg-[#222222] py-3 px-6 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </div>
         </form>
-          <div className="flex flex-wrap justify-center align-center gap-3 mt-5">
-            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://github.com/Chaitya0623', "_blank")}>              
+          <div className="flex flex-wrap justify-center align-center gap-3 mt-3">
+            <button className="bg-[#222222] border-white py-3 px-3 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://github.com/Chaitya0623', "_blank")}>              
               <img
                 src={github}
                 className='w-7 h-7 object-contain'
               />
             </button>
-            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.linkedin.com/in/chaitya-shah-381b5421b/', "_blank")}>              
+            <button className="bg-[#222222] border-white py-3 px-3 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.linkedin.com/in/chaitya-shah-381b5421b/', "_blank")}>              
               <img
                 src={linkedin}
-                className='w-7 h-7 object-contain'
+                className='w-7 h-5 object-contain'
               />
             </button>
-            <button className="bg-tertiary border-white py-3 px-4 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://www.instagram.com/chaitya0623/', "_blank")}>              
+            <button className="bg-[#222222] border-white py-3 px-3 rounded-full outline-none w-fit text-white font-bold shadow-md shadow-primary" onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=chaitya0623@gmail.com', "_blank")}>              
               <img
-                src={instagram}
+                src={gmail}
                 className='w-7 h-7 object-contain'
               />
             </button>
           </div>
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-      <div className="sm:ml-[100px] sm:mt-100 mt-[150px]">
-        <Lottie options={defaultOptions} height={window.innerWidth < 600 ? 240 : 400} width={window.innerWidth < 600 ? 300 : 500}/>
-      </div>
-        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );

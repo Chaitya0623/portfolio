@@ -1,13 +1,13 @@
-import { github } from "../assets";
-import { projects, publications } from "../constants";
+import React from "react";
+import { personal_blogs, technical_blogs } from "../constants";
 
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 import SectionWrapper from '../hoc/SectionWrapper'
+import { Tilt } from 'react-tilt'
 
-const ProjectCard = ({
+const BlogsCard = ({
     index,
     name,
     description,
@@ -55,30 +55,32 @@ const ProjectCard = ({
     );
   };
 
-const Works = () => {
+const Blogs = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
-      </motion.div>
+    <motion.div variants={textVariant()}>
+      <h2 className={`${styles.sectionHeadText} text-center`}>Personal Blogs</h2>
+    </motion.div>
 
-      <div className='mt-10 flex flex-wrap gap-7 justify-center '>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+    <div className='mt-10 flex flex-wrap justify-center gap-7'>
+      {personal_blogs.map((project, index) => (
+        <BlogsCard key={`project-${index}`} index={index} {...project} />
+      ))}
+    </div>
 
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center mt-[50px]`}>Publications</h2>
-      </motion.div>
 
-      <div className='mt-10 flex flex-wrap gap-7 justify-center '>
-        {publications.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
-    </>
+
+    <motion.div variants={textVariant()}>
+      <h2 className={`${styles.sectionHeadText} text-center mt-[50px]`}>Technical Blogs</h2>
+    </motion.div>
+
+    <div className='mt-10 flex flex-wrap justify-center gap-7'>
+      {technical_blogs.map((project, index) => (
+        <BlogsCard key={`project-${index}`} index={index} {...project} />
+      ))}
+    </div>
+  </>
   );
 };
 
-export default SectionWrapper(Works, "projects");
+export default SectionWrapper(Blogs, "achievements");
