@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../../styles";
 import { fadeIn, textVariant } from "../../utils/motion";
 import SectionWrapper from "../../hoc/SectionWrapper";
-import axioma from "../../assets/company/axioma.mp4";
+import axioma from "../../assets/company/Axioma.mp4";
 import { Tilt } from "react-tilt";
 
 const AudienceAnalytics = () => {
