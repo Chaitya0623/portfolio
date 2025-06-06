@@ -38,18 +38,6 @@ const ProjectCard = ({
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px] text-center'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px] text-center'>{description}</p>
-          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-          {source_code_link && (
-          <a
-            href={source_code_link}
-            className='text-white-100 text-[19px] font-bold tracking-wider block'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            {'🔗'}
-          </a>
-        )}
-          </div> */}
         </div>
 
         <div className='flex flex-wrap gap-2'>

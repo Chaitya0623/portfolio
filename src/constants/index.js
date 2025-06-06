@@ -10,7 +10,6 @@ import {
     irc24,
     ercr23,
     isdc24,
-    retiral, 
     avrio,
     aaai,
     springer,
@@ -28,7 +27,8 @@ import {
     ethereum,
     aiagent,
     finance,
-    audienceanalytics
+    audienceanalytics,
+    spotify
   } from "../assets";
   
   export const navLinks = [
@@ -137,35 +137,34 @@ import {
   
   const projects = [
     {
-      name: "Audience Analytics Product (Mozilla and Google Grants)",
+      name: "Audience Analytics Platform (Mozilla and Google Grants)",
       description: "Developed the MVP for an AI-powered Newsroom analytics platform to boost engagement for 20K+ users",
       image: audienceanalytics,
+      source_code_link: '/projects/audience-analytics'
     },
     {
       name: "AI Agent for Social Media Trend Analysis (UNICEF Incubated)",
       description: "Analyzed 120K+ posts across multiple platforms to identify emerging trends",
       image: aiagent,
+      source_code_link: '/projects/ai-agent'
     },
     {
       name: "RAG based Mental Health Chatbot",
       description: "Developed a RAG chatbot to provide reliable, context-aware mental health assistance",
       image: mental_health,
-    },
-    {
-      name: "GenAI-Powered Financial Advisory Platform",
-      description: "Created a personalized savings insights engine with fine-tuned GPT model",
-      image: finance,
-      source_code_link: "https://github.com/Chaitya0623/TechTitans_TIAA",
+      source_code_link: '/projects/mental-health-chatbot'
     },
     {
       name: "Fraud Detection in Ethereum Transactions",
       description: "Classified fraudulent nodes on 250K+ transactions based on behavioral patterns",
       image: ethereum,
+      source_code_link: '/projects/ethereum-fraud-detection'
     },
     {
       name: "Energy Optimization Across McDonald's Outlets",
       description: "Engineered data pipelines to track appliance level consumption and reduce energy waste",
       image: mcdonalds,
+      source_code_link: '/projects/energy-optimization'
     },
   ];
   
@@ -206,27 +205,27 @@ import {
     },
   ];
   const personal_blogs = [
-    // {
-    //   name: "The Story Behind My Columbia Admit",
-    //   description:
-    //     "Coming Soon",
-    //   image: columbia,
-    // },
     {
       name: "Lessons from Leading an International Mars Rover Team",
       description:
         "Coming Soon",
       image: antariksh,
     },
-  ];
-  const technical_blogs = [
     {
-      name: "Tech Guides",
+      name: "The Story Behind My Columbia Admit",
       description:
-        "My Personal Notes",
-      image: github_logo,
-      source_code_link: "https://github.com/Chaitya0623/Documentation/wiki",
+        "May 30, 2025 • 17 min read",
+      image: columbia,
+      source_code_link: '/blogs/columbia-admit'
+    },
+  ];
+  const case_studies = [
+    {
+      name: "Can Wearables Improve Music Recommendations?",
+      description:
+        "Coming Soon",
+      image: spotify,
     },
   ];
 
-  export { internships, educations, projects, publications, competitions, personal_blogs, technical_blogs };
+  export { internships, educations, projects, publications, competitions, personal_blogs, case_studies };

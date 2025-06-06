@@ -7,6 +7,14 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Blogs from './Blogs';
 
+import ColumbiaAdmit from './blogs/ColumbiaAdmit';
+
+import AudienceAnalytics from './projects/AudienceAnalytics';
+import AIAgent from './projects/AIAgent'
+import MentalHealthChatbot from './projects/MentalHealthChatbot'
+import EthereumFraudDetection from './projects/EthereumFraudDetection'
+import EnergyOptimization from './projects/EnergyOptimization'
+
 export {
   Navbar,
   About,
@@ -15,5 +23,13 @@ export {
   Works,
   Feedbacks,
   Contact,
-  Blogs
+  Blogs,
+
+  ColumbiaAdmit,
+
+  AudienceAnalytics,
+  AIAgent,
+  MentalHealthChatbot,
+  EthereumFraudDetection,
+  EnergyOptimization
 }

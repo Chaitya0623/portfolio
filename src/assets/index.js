@@ -1,12 +1,7 @@
 import logo from "./logo.jpeg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import linkedin from "./linkedin.png";
 import gmail from "./gmail.png";
-import instagram from "./instagram.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -28,7 +23,6 @@ import simppl_image from './company/simppl_image.jpg'
 import synapse_image from './company/synapse_image.jpg'
 
 import xtract from './pictures/xtract.png'
-import unscript23 from './pictures/unscript23.png'
 import irc24 from './pictures/irc24.jpg'
 import irc23 from './pictures/irc23.jpg'
 import erc23o from './pictures/erc23o.png'
@@ -36,27 +30,18 @@ import ercr23 from './pictures/ercr23.jpg'
 import erc24 from './pictures/erc24.jpg'
 import isdc24 from './pictures/isdc24.jpg'
 import karate from './pictures/karate.png'
-import profile from './pictures/Chaitya_Profile.jpeg'
+import profile from './pictures/Chaitya_Profile.jpg'
 import mcdonalds from './pictures/mcdonalds.jpg'
 import mental_health from './pictures/mental_health.png'
 import ethereum from './pictures/ethereum.jpg'
 import aiagent from './pictures/aiagent.jpg'
 import finance from './pictures/finance.jpg'
 import audienceanalytics from './pictures/audienceanalytics.png'
-
-import healo from './pictures/healo.jpeg'
-import yummatch from './pictures/yummatch.png'
-import shortathon from './pictures/shortathon.jpg'
-import tubeboost from './pictures/tubeboost.png'
-import workconnect from './pictures/workconnect.webp'
-import verifyu from './pictures/verifyu.webp'
-import retiral from './pictures/retiral.png'
-import resugenius from './pictures/resugenius.png'
 import github_logo from './pictures/github_logo.jpg'
+import spotify from './pictures/spotify.jpg'
 
 export {
   logo,
-  backend,
   menu,
   close,
   github,
@@ -71,19 +56,10 @@ export {
   simppl_image,
   synapse_image,
   xtract,
-  unscript23,
   irc23,
   irc24,
   ercr23,
   isdc24,
-  healo,
-  yummatch,
-  shortathon,
-  verifyu,
-  retiral,
-  resugenius,
-  workconnect,
-  tubeboost,
   profile,
   avrio,
   springer,
@@ -102,5 +78,6 @@ export {
   ethereum,
   aiagent,
   finance,
-  audienceanalytics
+  audienceanalytics,
+  spotify
 };

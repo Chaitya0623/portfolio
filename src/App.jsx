@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { About, Contact, Education, Experience, Navbar, Works, Blogs} from './components'
+import { About, Contact, Education, Experience, Navbar, Works, Blogs, 
+  ColumbiaAdmit,
+  AudienceAnalytics, AIAgent, MentalHealthChatbot, EthereumFraudDetection, EnergyOptimization
+} from './components'
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -18,20 +21,10 @@ const App = () => {
             <Route path="/" element={              
             <>
               <Navbar/>
-              {/* <Hero/> */}
               <About/>
               <Education />
               <Experience />
               
-            </>}>
-            </Route>
-            <Route path='/contact' element={
-              <>
-              <Navbar/>
-              {/* <div className="relative z-0"> */}
-                <Contact/>
-                {/* <StarsCanvas/> */}
-              {/* </div> */}
             </>}>
             </Route>
             <Route path='/projects' element={
@@ -46,55 +39,51 @@ const App = () => {
               <Blogs/>
             </>}>
             </Route>
-            {/* <Route path="/home" element={              
-            <>
+            <Route path='/contact' element={
+              <>
               <Navbar/>
-              <Hero/>
-              <About/> */}
-              {/* <div className="relative z-0"> */}
-                {/* <Contact/> */}
-                {/* <StarsCanvas/> */}
-              {/* </div> */}
-            {/* </>}> */}
-            {/* </Route> */}
-            {/* <Route path="/experience" element={
-            <>
-              <Navbar />
-              <Experience />
-            </>}>
-            </Route> */}
-            {/* <Route path="/projects" element={
-            <>
-              <Navbar />
-              <Works />
-            </>}>
-            </Route> */}
-            {/* <Route path="/achievements" element={
-            <>
-              <Navbar />
-              <Feedbacks />
+                <Contact/>
             </>}>
             </Route>
-            <Route path="/publications" element={
-            <>
-              <Navbar /> */}
-              {/* <Publications /> */}
-            {/* </>}>
+
+            <Route path='/blogs/columbia-admit' element={
+              <>
+              <Navbar/>
+              <ColumbiaAdmit />
+            </>}>
             </Route>
-            <Route path="/competitions" element={
-            <>
-              <Navbar /> */}
-              {/* <Publications /> */}
-            {/* </>}> */}
-            {/* </Route> */}
-            {/* <Route path="/projects" element={<Works />}></Route> */}
-            {/* <Route path="/achievements" element={<Feedbacks />}></Route> */}
+
+            <Route path='/projects/audience-analytics' element={
+              <>
+              <Navbar/>
+              <AudienceAnalytics />
+            </>}>
+            </Route>
+            <Route path='/projects/ai-agent' element={
+              <>
+              <Navbar/>
+              <AIAgent />
+            </>}>
+            </Route>
+            <Route path='/projects/mental-health-chatbot' element={
+              <>
+              <Navbar/>
+              <MentalHealthChatbot />
+            </>}>
+            </Route>
+            <Route path='/projects/ethereum-fraud-detection' element={
+              <>
+              <Navbar/>
+              <EthereumFraudDetection />
+            </>}>
+            </Route>
+            <Route path='/projects/energy-optimization' element={
+              <>
+              <Navbar/>
+              <EnergyOptimization />
+            </>}>
+            </Route>
           </Routes>
-        {/* </div> */}
-        {/* <Experience/> */}
-        {/* <Tech /> */}
-        {/* <Works/> */}
-        {/* <Feedbacks/> */}
       </div>
     </BrowserRouter>
   )
