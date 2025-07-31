@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { About, Contact, Education, Experience, Navbar, Works, Blogs, 
-  ColumbiaAdmit,
+import { About, Contact, Education, Experience, Navbar, Works, Blogs, Feedbacks,
+  ColumbiaAdmit, DJSAntariksh, 
   AudienceAnalytics, AIAgent, MentalHealthChatbot, EthereumFraudDetection, EnergyOptimization
 } from './components'
 import { useState, useEffect } from "react";
@@ -50,6 +50,14 @@ const App = () => {
               <>
               <Navbar/>
               <ColumbiaAdmit />
+            </>}>
+            </Route>
+
+            <Route path='/blogs/djs-antariksh' element={
+              <>
+              <Navbar/>
+              <DJSAntariksh />
+              <Feedbacks />
             </>}>
             </Route>
 

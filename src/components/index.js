@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Blogs from './Blogs';
 
 import ColumbiaAdmit from './blogs/ColumbiaAdmit';
+import DJSAntariksh from './blogs/DJSAntariksh';
 
 import AudienceAnalytics from './projects/AudienceAnalytics';
 import AIAgent from './projects/AIAgent'
@@ -26,6 +27,7 @@ export {
   Blogs,
 
   ColumbiaAdmit,
+  DJSAntariksh,
 
   AudienceAnalytics,
   AIAgent,

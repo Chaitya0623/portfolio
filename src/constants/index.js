@@ -127,12 +127,12 @@ import {
       image: irc23,
       source_code_link: 'https://drive.google.com/file/d/1qnUZ087fVU60YNw_nbVyLplaaZ0lWTlf/view?usp=sharing'
     },
-    {
-      description: "Nov 2022",
-      name: "Winner of X-tract 2022",
-      image: xtract,
-      source_code_link: 'https://drive.google.com/file/d/1ETWASIe5M1jjnyCeKaR-nWeQ2eBgXvj7/view?usp=sharing'
-    },
+    // {
+    //   description: "Nov 2022",
+    //   name: "Winner of X-tract 2022",
+    //   image: xtract,
+    //   source_code_link: 'https://drive.google.com/file/d/1ETWASIe5M1jjnyCeKaR-nWeQ2eBgXvj7/view?usp=sharing'
+    // },
   ];
   
   const projects = [
@@ -208,8 +208,9 @@ import {
     {
       name: "Lessons from Leading an International Mars Rover Team",
       description:
-        "Coming Soon",
+        "Jul 31, 2025 • 19 min read",
       image: antariksh,
+      source_code_link: '/blogs/djs-antariksh'
     },
     {
       name: "The Story Behind My Columbia Admit",
