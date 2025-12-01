@@ -15,6 +15,7 @@ import ieee from './company/ieee.jpg'
 import avrio from './company/avrio.jpg'
 import mu from './company/mu.png'
 import columbia from './company/columbia.jpg'
+import columbia_ibm from './company/columbia_ibm.png'
 import aaai from './company/aaai.jpg'
 import elsevier from './company/elsevier.png'
 import nationalconference from './company/nationalconference.jpg'
@@ -72,6 +73,7 @@ export {
   elsevier,
   nationalconference,
   columbia,
+  columbia_ibm,
   github_logo,
   mcdonalds,
   mental_health,

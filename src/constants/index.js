@@ -21,6 +21,7 @@ import {
     nationalconference,
     elsevier,
     columbia,
+    columbia_ibm
     github_logo,
     mcdonalds,
     mental_health,
@@ -138,33 +139,39 @@ import {
   const projects = [
     {
       name: "Audience Analytics Platform (Mozilla and Google Grants)",
-      description: "Developed the MVP for an AI-powered Newsroom analytics platform to boost engagement for 20K+ users",
+      description: "Developed the MVP for an AI-powered Newsroom analytics platform to boost engagement for 20K+ users • 2025",
       image: audienceanalytics,
       source_code_link: '/projects/audience-analytics'
     },
     {
       name: "AI Agent for Social Media Trend Analysis (UNICEF Incubated)",
-      description: "Analyzed 120K+ posts across multiple platforms to identify emerging trends",
+      description: "Analyzed 120K+ posts across multiple platforms to identify emerging trends • 2025",
       image: aiagent,
       source_code_link: '/projects/ai-agent'
     },
     {
       name: "RAG based Mental Health Chatbot",
-      description: "Developed a RAG chatbot to provide reliable, context-aware mental health assistance",
+      description: "Developed a RAG chatbot to provide reliable, context-aware mental health assistance • 2023",
       image: mental_health,
       source_code_link: '/projects/mental-health-chatbot'
     },
     {
       name: "Fraud Detection in Ethereum Transactions",
-      description: "Classified fraudulent nodes on 250K+ transactions based on behavioral patterns",
+      description: "Classified fraudulent nodes on 250K+ transactions based on behavioral patterns • 2023",
       image: ethereum,
       source_code_link: '/projects/ethereum-fraud-detection'
     },
     {
       name: "Energy Optimization Across McDonald's Outlets",
-      description: "Engineered data pipelines to track appliance level consumption and reduce energy waste",
+      description: "Engineered data pipelines to track appliance level consumption and reduce energy waste • 2024",
       image: mcdonalds,
       source_code_link: '/projects/energy-optimization'
+    },
+    {
+      name: "Auto-refining Smart Contract Generator",
+      description: "A self-improving Agentic ecosystem that creates, validates, and refines Solidity contracts from natural language descriptions. • 2025",
+      image: columbia_ibm,
+      source_code_link: "https://github.com/AgenticsFintekColumbia/smart-contracts"
     },
   ];
   
