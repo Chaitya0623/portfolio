@@ -21,7 +21,7 @@ import {
     nationalconference,
     elsevier,
     columbia,
-    columbia_ibm
+    columbia_ibm,
     github_logo,
     mcdonalds,
     mental_health,
