@@ -168,8 +168,8 @@ import {
       source_code_link: '/projects/energy-optimization'
     },
     {
-      name: "Auto-refining Smart Contract Generator",
-      description: "A self-improving Agentic ecosystem that creates, validates, and refines Solidity contracts from natural language descriptions. • 2025",
+      name: "Auto Refining Smart Contract Generator",
+      description: "A self improving Agentic ecosystem that creates, validates, and refines Solidity contracts from natural language descriptions. • 2025",
       image: columbia_ibm,
       source_code_link: "https://github.com/AgenticsFintekColumbia/smart-contracts"
     },
