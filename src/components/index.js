@@ -9,6 +9,7 @@ import Blogs from './Blogs';
 
 import ColumbiaAdmit from './blogs/ColumbiaAdmit';
 import DJSAntariksh from './blogs/DJSAntariksh';
+import Snowflake from './blogs/Snowflake';
 
 import AudienceAnalytics from './projects/AudienceAnalytics';
 import AIAgent from './projects/AIAgent'
@@ -28,6 +29,7 @@ export {
 
   ColumbiaAdmit,
   DJSAntariksh,
+  Snowflake,
 
   AudienceAnalytics,
   AIAgent,

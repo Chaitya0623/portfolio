@@ -40,6 +40,7 @@ import finance from './pictures/finance.jpg'
 import audienceanalytics from './pictures/audienceanalytics.png'
 import github_logo from './pictures/github_logo.jpg'
 import spotify from './pictures/spotify.jpg'
+import snowflake from './pictures/snowflake.png'
 
 export {
   logo,
@@ -81,5 +82,6 @@ export {
   aiagent,
   finance,
   audienceanalytics,
-  spotify
+  spotify,
+  snowflake
 };

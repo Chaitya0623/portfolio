@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { About, Contact, Education, Experience, Navbar, Works, Blogs, Feedbacks,
-  ColumbiaAdmit, DJSAntariksh, 
+  ColumbiaAdmit, DJSAntariksh, Snowflake,
   AudienceAnalytics, AIAgent, MentalHealthChatbot, EthereumFraudDetection, EnergyOptimization
 } from './components'
 import { useState, useEffect } from "react";
@@ -50,6 +50,13 @@ const App = () => {
               <>
               <Navbar/>
               <ColumbiaAdmit />
+            </>}>
+            </Route>
+
+            <Route path='/blogs/snowflake-workload-heterogeneity' element={
+              <>
+              <Navbar/>
+              <Snowflake />
             </>}>
             </Route>
 

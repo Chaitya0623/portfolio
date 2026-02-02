@@ -229,10 +229,11 @@ import {
   ];
   const case_studies = [
     {
-      name: "Can Wearables Improve Music Recommendations?",
+      name: "The Limits of Aggregate Optimization: Workload Heterogeneity in Multi-Cloud Capacity Planning",
       description:
-        "Coming Soon",
-      image: spotify,
+        "Feb 1, 2026 • 18 min read",
+      image: snowflake,
+      source_code_link: '/blogs/snowflake-workload-heterogeneity'
     },
   ];
 
