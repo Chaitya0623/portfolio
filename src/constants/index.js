@@ -29,7 +29,8 @@ import {
     aiagent,
     finance,
     audienceanalytics,
-    spotify
+    spotify,
+    snowflake
   } from "../assets";
   
   export const navLinks = [
