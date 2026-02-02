@@ -22,6 +22,7 @@ import nationalconference from './company/nationalconference.jpg'
 import springer from './company/springer.jpg'
 import simppl_image from './company/simppl_image.jpg'
 import synapse_image from './company/synapse_image.jpg'
+import snowflake from './company/snowflake.png'
 
 import xtract from './pictures/xtract.png'
 import irc24 from './pictures/irc24.jpg'
@@ -40,7 +41,6 @@ import finance from './pictures/finance.jpg'
 import audienceanalytics from './pictures/audienceanalytics.png'
 import github_logo from './pictures/github_logo.jpg'
 import spotify from './pictures/spotify.jpg'
-import snowflake from './pictures/snowflake.png'
 
 export {
   logo,
