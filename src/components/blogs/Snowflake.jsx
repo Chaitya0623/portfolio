@@ -17,8 +17,7 @@ const SnowflakeBlog = () => {
     <>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          The Limits of Aggregate Optimization: Workload Heterogeneity in
-          Multi-Cloud Capacity Planning
+          Beyond Averages: Heterogeneity in Cloud Capacity Planning
         </h2>
       </motion.div>
 
@@ -27,8 +26,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px] italic"
         >
-          Inspired by "Shaved Ice: Optimal Compute Resource Commitments for
-          Dynamic Multi-Cloud Workloads" (Stokely et al., ICPE 2025), extended
+          Inspired by <a href="https://dl.acm.org/doi/10.1145/3676151.3719353" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">"Shaved Ice: Optimal Compute Resource Commitments for Dynamic Multi-Cloud Workloads"</a> (Stokely et al., ICPE 2025), extended
           with a heterogeneity-aware analysis and a practical decision
           framework.
         </motion.p>
@@ -92,7 +90,7 @@ const SnowflakeBlog = () => {
             </li>
             <li>
               Shows why <strong>workload heterogeneity</strong> changes how we
-              should think about "optimal" commitment strategies—then proposes a{" "}
+              should think about "optimal" commitment strategies. Then proposes a{" "}
               <strong>taxonomy + decision framework</strong> grounded in
               empirical results.
             </li>
@@ -106,7 +104,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-10 text-secondary text-[32px] text-center"
         >
-          What the Shaved Ice Paper Did (Gist, Paraphrased)
+          What the Shaved Ice Paper Did
         </motion.h2>
 
         <motion.p
@@ -768,6 +766,30 @@ const SnowflakeBlog = () => {
         >
           All code, intermediate outputs, and figure generation steps are in the
           notebook: <code>Workload_Heterogeneity_ICPE.ipynb</code>
+        </motion.p>
+      </div>
+
+      {/* Co-authors */}
+      <div className="w-full flex flex-col items-start">
+        <motion.h2
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-10 text-secondary text-[32px] text-center"
+        >
+          Co-authors
+        </motion.h2>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[17px]"
+        >
+          <strong>Mohammed Raza</strong> - MS in Data Science, University of Pennsylvania
+        </motion.p>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-3 text-secondary text-[17px]"
+        >
+          <strong>Taher Kapadia</strong> - MSE in Robotics, University of Pennsylvania
         </motion.p>
       </div>
     </>

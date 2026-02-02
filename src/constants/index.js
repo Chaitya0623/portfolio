@@ -230,7 +230,7 @@ import {
   ];
   const case_studies = [
     {
-      name: "The Limits of Aggregate Optimization: Workload Heterogeneity in Multi-Cloud Capacity Planning",
+      name: "Beyond Averages: Heterogeneity in Cloud Capacity Planning",
       description:
         "Feb 1, 2026 • 18 min read",
       image: snowflake,
