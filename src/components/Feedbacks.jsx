@@ -26,8 +26,18 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px] border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
       >
         <div className='relative w-full h-[200px]'>
-          {source_code_link.startsWith('http') ? (
-            <a href={source_code_link} target='_blank' rel='noopener noreferrer' className='block w-full h-full'>
+          {source_code_link?.startsWith('http') ? (
+            <a 
+              href={source_code_link} 
+              target='_blank' 
+              rel='noopener noreferrer' 
+              className='block w-full h-full'
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(source_code_link, '_blank');
+                e.preventDefault();
+              }}
+            >
               <img
                 src={image}
                 alt='project_image'
