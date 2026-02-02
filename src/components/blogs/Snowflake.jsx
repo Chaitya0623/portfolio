@@ -755,7 +755,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Mohammed Raza</strong> - MS in Data Science, University of Pennsylvania
+          <strong>Mohammed Raza</strong> - MSE in Data Science, University of Pennsylvania
         </motion.p>
 
         <motion.p
