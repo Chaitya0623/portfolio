@@ -172,7 +172,30 @@ const AudienceAnalytics = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[32px] text-center"
         >
-          3. My Learnings
+          3. Technical Implementation
+        </motion.h2>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[17px]"
+        >
+          The Axioma platform is built as a complete full-stack production system designed 
+          to handle real-time analytics at scale. On the frontend, <strong>Next.js</strong> powers 
+          the responsive, interactive dashboards that journalists and editors use daily. The backend 
+          is driven by <strong>Flask APIs</strong> that process and serve analytics computations, while 
+          <strong>PostgreSQL</strong> manages persistent data storage and <strong>Redis</strong> handles 
+          caching and real-time data layers for sub-second dashboard updates. The entire system is 
+          containerized with <strong>Docker</strong> for consistency and scalability, orchestrated and 
+          served via <strong>Nginx</strong> on <strong>AWS</strong> infrastructure. This architecture 
+          processes 1M+ user interactions daily, driving real-time content recommendations and enabling 
+          newsrooms to make data-informed editorial decisions instantaneously.
+        </motion.p>
+
+        <motion.h2
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[32px] text-center"
+        >
+          4. My Learnings
         </motion.h2>
 
         <motion.p

@@ -28,7 +28,7 @@ const AIAgent = () => {
           In the digital era, vast amounts of public discourse take place across
           platforms like Reddit, Telegram, and YouTube. For organizations aiming
           to understand social sentiment, track misinformation, or identify
-          emerging community needs, manually sifting through this fragmented
+          emerging community needs, manually shifting through this fragmented
           content is both inefficient and ineffective. There is a growing need
           for a unified, automated solution that can provide real time, topic
           wise insights from multiple sources of public data.
@@ -38,7 +38,7 @@ const AIAgent = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          Developed under the guidance of UNICEF, <strong>Arbiter</strong> is a
+          Developed under the guidance of UNICEF, <a href="https://arbiter.simppl.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline"><strong>Arbiter</strong></a> is a
           comprehensive AI-powered system designed to streamline multi platform
           social media analysis. The platform enables stakeholders to monitor
           and interpret over 120,000+ posts across diverse online spaces,
@@ -100,7 +100,58 @@ const AIAgent = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[32px] text-center"
         >
-          2. What Can Arbiter's AI Agent Answer?
+          2. System Architecture & Query Processing
+        </motion.h2>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[17px]"
+        >
+          At the heart of Arbiter lies a multi-path query processing engine designed
+          to intelligently route user requests to the most appropriate analysis method.
+          This architecture demonstrates a key design principle: different questions
+          require different solutions.
+        </motion.p>
+
+        <div className="text-secondary text-[17px]">
+          <h3 className="mt-5 font-bold text-[20px]">The Three-Path Router:</h3>
+          <ul className="list-disc list-inside mt-3 space-y-3">
+            <li>
+              <strong>Semantic Search Path:</strong> For exploratory queries about
+              topics or themes, the system converts user input into vector embeddings
+              and performs similarity searches across the content corpus. This path
+              excels at understanding intent and finding contextually relevant posts
+              even when exact keywords don't match.
+            </li>
+            <li>
+              <strong>Structured Query Path:</strong> For precise, metrics-driven
+              questions ("What posts had the most engagement?"), the system generates
+              and executes SQL queries against the database. This path prioritizes
+              accuracy and performance for well-defined data relationships.
+            </li>
+            <li>
+              <strong>Data Fallback Path:</strong> When data is unavailable or queries
+              fail, the system gracefully handles errors and provides context-aware
+              fallback responses rather than failing silently.
+            </li>
+          </ul>
+        </div>
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[17px]"
+        >
+          This router-based architecture enables the AI Agent to handle diverse
+          query types efficiently, from unstructured exploratory analysis to
+          structured database lookups, while maintaining robustness through
+          intelligent error handling and graceful degradation.
+        </motion.p>
+
+        <motion.h2
+          variants={fadeIn("", "", 0.1, 0.1)}
+          className="mt-5 text-secondary text-[32px] text-center"
+        >
+          3. What Can Arbiter's AI Agent Answer?
         </motion.h2>
 
         <div className="text-secondary text-[17px]">
