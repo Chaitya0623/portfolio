@@ -174,15 +174,6 @@ const SnowflakeBlog = () => {
           pre-provisioning to mask VM startup latency so customers can scale
           quickly.
         </motion.p>
-
-        <motion.p
-          variants={fadeIn("", "", 0.1, 0.1)}
-          className="mt-5 text-secondary text-[17px]"
-        >
-          <strong>Takeaway:</strong> Shaved Ice gives a practical blueprint for
-          commitment optimization and releases a dataset that enables follow-on
-          research.
-        </motion.p>
       </div>
 
       {/* Section: The Pitfall */}
@@ -207,14 +198,14 @@ const SnowflakeBlog = () => {
           className="mt-5 text-secondary text-[17px] italic border-l-4 border-secondary pl-4"
         >
           Which specific workloads are predictable enough that simple strategies
-          work well—and which workloads need extra care?
+          work well, and which workloads need extra care?
         </motion.p>
 
         <motion.p
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          To answer that, I analyze the Shaved Ice dataset at the level of
+          To answer that, we analyze the Shaved Ice dataset at the level of
           individual (region, VM type) workloads.
         </motion.p>
       </div>
@@ -341,7 +332,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Plain-English takeaway:</strong> A single
+          <strong>Takeaway:</strong> A single
           forecasting/commitment rule won't fit everyone. Some workloads are
           steady enough that you can plan confidently; others are inherently
           harder.
@@ -413,7 +404,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Plain-English takeaway:</strong> Most of the volume is in the
+          <strong>Takeaway:</strong> Most of the volume is in the
           predictable bucket (big money), but many of the distinct workloads
           live in the messier buckets (operational complexity).
         </motion.p>
@@ -432,8 +423,8 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          To measure how much better we can do than simple rules, I use a Shaved
-          Ice–style cost idea: if you commit too little, you pay expensive
+          To measure how much better we can do than simple rules, we use a Shaved
+          Ice style cost idea: if you commit too little, you pay expensive
           on-demand for the shortfall; if you commit too much, you pay for
           unused capacity.
         </motion.p>
@@ -442,7 +433,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          I compare three ways to pick a commitment level:
+          We compare three ways to pick a commitment level:
         </motion.p>
 
         <div className="mt-3 text-secondary text-[17px]">
@@ -509,7 +500,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Plain-English takeaway:</strong> If you want big dollars
+          <strong>Takeaway:</strong> If you want big dollars
           saved, focus on the HIGH bucket. If you want to avoid bad mistakes
           from naive rules, the MEDIUM bucket deserves extra attention. The LOW
           bucket is mostly about risk control, not squeezing out tiny percent
@@ -566,7 +557,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Plain-English takeaway:</strong> Shaved Ice's aggregate
+          <strong>Takeaway:</strong> Shaved Ice's aggregate
           approach is validated: pooling really does make the problem easier.
           The point of heterogeneity analysis isn't "don't aggregate." It's
           "know what's inside the aggregate so you spend effort where it
@@ -615,7 +606,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          <strong>Plain-English takeaway:</strong> You can keep an aggregate
+          <strong>Takeaway:</strong> You can keep an aggregate
           strategy and still apply sensible guardrails by region and VM class.
         </motion.p>
       </div>
@@ -633,7 +624,7 @@ const SnowflakeBlog = () => {
           variants={fadeIn("", "", 0.1, 0.1)}
           className="mt-5 text-secondary text-[17px]"
         >
-          The goal isn't to run expensive modeling everywhere—it's to spend
+          The goal isn't to run expensive modeling everywhere, it's to spend
           sophistication where it returns value.
         </motion.p>
 
@@ -749,24 +740,6 @@ const SnowflakeBlog = () => {
             className="max-w-full h-auto rounded-lg"
           />
         </motion.div>
-      </div>
-
-      {/* Reproducibility */}
-      <div className="w-full flex flex-col items-start">
-        <motion.h2
-          variants={fadeIn("", "", 0.1, 0.1)}
-          className="mt-10 text-secondary text-[32px] text-center"
-        >
-          Reproducibility
-        </motion.h2>
-
-        <motion.p
-          variants={fadeIn("", "", 0.1, 0.1)}
-          className="mt-5 text-secondary text-[17px]"
-        >
-          All code, intermediate outputs, and figure generation steps are in the
-          notebook: <code>Workload_Heterogeneity_ICPE.ipynb</code>
-        </motion.p>
       </div>
 
       {/* Co-authors */}
