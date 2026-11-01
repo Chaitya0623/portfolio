@@ -3,7 +3,9 @@ import { About, Contact, Education, Experience, Navbar, Works, Blogs, Feedbacks,
   ColumbiaAdmit, DJSAntariksh, Snowflake,
   AudienceAnalytics, AIAgent, MentalHealthChatbot, EthereumFraudDetection, EnergyOptimization
 } from './components'
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
+
+const NotePage = lazy(() => import('./components/notes/NotePage'))
 
 const App = () => {
   const [ loading, setLoading ] = useState(false)
@@ -57,6 +59,13 @@ const App = () => {
               <>
               <Navbar/>
               <Snowflake />
+            </>}>
+            </Route>
+
+            <Route path='/blogs/notes/:slug' element={
+              <>
+              <Navbar/>
+              <Suspense fallback={null}><NotePage /></Suspense>
             </>}>
             </Route>
 

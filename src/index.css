@@ -12,12 +12,18 @@
 
 ::-webkit-scrollbar{
   background: #000000;
-  width: 8px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3c3c3c;
-  border-radius: 5px;
+  background: #5a5a5a;
+  min-height: 48px;
+  border-radius: 6px;
+  border: 2px solid #000000;
   box-shadow: 0 0 10px rgba(255,204,0,0.3), 0 0 20px rgba(255,105,180,0.2);
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: #8a8a8a;
 }
 
 * {
@@ -25,7 +31,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color-scheme: dark;
 }
 

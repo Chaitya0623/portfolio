@@ -174,6 +174,13 @@ import {
       image: columbia_ibm,
       source_code_link: "https://github.com/AgenticsFintekColumbia/smart-contracts"
     },
+        {
+      name: "Beyond Averages: Heterogeneity in Cloud Capacity Planning",
+      description:
+        "Feb 1, 2026 • 18 min read",
+      image: snowflake,
+      source_code_link: '/blogs/snowflake-workload-heterogeneity'
+    },
   ];
   
   const publications = [
@@ -228,14 +235,5 @@ import {
       source_code_link: '/blogs/columbia-admit'
     },
   ];
-  const case_studies = [
-    {
-      name: "Beyond Averages: Heterogeneity in Cloud Capacity Planning",
-      description:
-        "Feb 1, 2026 • 18 min read",
-      image: snowflake,
-      source_code_link: '/blogs/snowflake-workload-heterogeneity'
-    },
-  ];
 
-  export { internships, educations, projects, publications, competitions, personal_blogs, case_studies };
+  export { internships, educations, projects, publications, competitions, personal_blogs };
