@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 import SectionWrapper from '../hoc/SectionWrapper'
+import CardBadge from './CardBadge'
 import { Tilt } from 'react-tilt'
 import { Link } from 'react-router-dom'
 import { notes_topics } from './notes/topics'
@@ -21,13 +22,14 @@ const BlogsCard = ({
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
           options={{
-            max: 45,
-            scale: 1,
+            max: 0,
+            scale: 1.03,
             speed: 450,
           }}
-          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
+          className='group bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
         >
           <div className='relative w-full h-[200px]'>
+            {source_code_link && <CardBadge type={source_code_link.startsWith('http') ? 'external' : 'internal'} />}
             {source_code_link ? (
               <a href={`${source_code_link}`} className='block w-full h-full'>
                 <img
@@ -70,11 +72,11 @@ const NotesCard = ({ index, slug, short, name, accent, chapters }) => {
       <motion.div variants={fadeIn("up", "spring", index * 0.1, 0.75)}>
         <Tilt
           options={{
-            max: 45,
-            scale: 1,
+            max: 0,
+            scale: 1.03,
             speed: 450,
           }}
-          className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
+          className='group bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
         >
           <Link to={`/blogs/notes/${slug}`} className='block'>
             <div
@@ -83,6 +85,7 @@ const NotesCard = ({ index, slug, short, name, accent, chapters }) => {
                 background: `radial-gradient(circle at 30% 20%, ${accent}55, transparent 60%), radial-gradient(circle at 80% 90%, ${accent}33, transparent 55%), #0d0d0d`,
               }}
             >
+              <CardBadge type='internal' />
               <svg className='absolute inset-0 w-full h-full opacity-30' aria-hidden='true'>
                 <defs>
                   <pattern id={`grid-${slug}`} width='24' height='24' patternUnits='userSpaceOnUse'>

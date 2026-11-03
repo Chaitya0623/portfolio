@@ -11,6 +11,7 @@ import synapse from './company/synapse.jpeg'
 import unicode from './company/unicode.jpeg'
 import iitp from './company/iitp.jpg'
 import simppl from './company/simppl.jpg'
+import jpmc from './company/jpmc.svg'
 import ieee from './company/ieee.jpg'
 import avrio from './company/avrio.jpg'
 import mu from './company/mu.png'
@@ -41,8 +42,11 @@ import finance from './pictures/finance.jpg'
 import audienceanalytics from './pictures/audienceanalytics.png'
 import github_logo from './pictures/github_logo.jpg'
 import spotify from './pictures/spotify.jpg'
+import kvcache from './pictures/kvcache.jpg'
 
 export {
+  jpmc,
+  kvcache,
   logo,
   menu,
   close,

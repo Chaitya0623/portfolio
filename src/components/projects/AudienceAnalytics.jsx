@@ -56,7 +56,7 @@ const AudienceAnalytics = () => {
           {/* Right: Video */}
           <motion.div className="flex-1 max-w-[480px] w-full">
             <Tilt
-              options={{ max: 45, scale: 1, speed: 450 }}
+              options={{ max: 0, scale: 1.03, speed: 450 }}
               className="bg-tertiary p-5 rounded-2xl border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]"
             >
               <div className="relative w-full h-[250px]">

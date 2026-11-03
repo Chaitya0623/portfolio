@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="g" cx="30%" cy="70%" r="90%">
+      <stop offset="0" stop-color="#a5694a"/>
+      <stop offset="0.55" stop-color="#8a5432"/>
+      <stop offset="1" stop-color="#6e3d1f"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <text x="960" y="560" text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, 'Times New Roman', Times, serif" font-size="360"
+        fill="#fdf8f2" letter-spacing="-6">JPMC</text>
+</svg>

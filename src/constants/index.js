@@ -30,7 +30,9 @@ import {
     finance,
     audienceanalytics,
     spotify,
-    snowflake
+    snowflake,
+    jpmc,
+    kvcache
   } from "../assets";
   
   export const navLinks = [
@@ -71,24 +73,62 @@ import {
   
   const internships = [
     {
+      name: "Machine Learning Center of Excellence, Summer Associate",
+      company: "JPMorganChase",
+      location: "New York, NY",
+      description: "Jun 2026 - Aug 2026",
+      image: jpmc,
+      points: [
+        "Post-trained LLMs via SFT (QLoRA) to build a unified framework to extract structured trading information from 1.5M+ daily conversations across 9 financial asset classes, achieving 96–107% of asset-specific model performance.",
+        "Demonstrated cross-asset knowledge transfer, achieving 82% event detection on domains without training annotations.",
+        "Benchmarked open-source LLM scaling, quantifying a 3.4-point F1 gain from 8B to 24B models at 4× GPU requirements.",
+        "Explored Dynamic LoRA routing/merging, enabling domain-specific updates, cutting compute 80% over full retraining.",
+      ],
+    },
+    {
       name: "Founding AI Engineer",
+      company: "SimPPL",
+      location: "New York, NY",
       description: "Aug 2023 - May 2025",
       image: simppl,
+      points: [
+        "Spearheaded a team of 4 to launch an AI-powered disinformation detection tool for 9 social media platforms, with grants from Mozilla and Google (exploreCSR), helping New York Public Radio boost engagement for 20K+ users.",
+        "Deployed a full-stack production system with Next.js, Flask APIs, PostgreSQL and Redis data layers, containerized with Docker and served via Nginx on AWS, processing 1M+ user interactions to drive real-time content recommendations.",
+        "Engineered an AI Agent using LangGraph to analyze 120k+ social media posts for our UNICEF-incubated tech venture.",
+        "Enabled journalists in Bangladesh to identify accounts responsible for coordinated harassment of minorities; investigations using the platform contributed to Meta removing accounts with 100M+ views.",
+      ],
     },
     {
       name: "Data Science Intern",
+      company: "Avrio Energy",
+      location: "Berlin, Germany",
       description: "Jun 2024 - Jul 2024",
       image: avrio,
+      points: [
+        "Optimized energy usage across 70+ McDonald’s outlets in 22 countries by engineering a data pipeline to track appliance level consumption and visualize real-time insights via Power BI, reducing operational costs by 15%.",
+        "Automated real-time fault detection with Airflow alerts and a 92% accurate XGBoost model, cutting energy waste by 21%.",
+      ],
     },
     {
       name: "Research Intern",
-      description: "May 2023 - Nov 2024",
+      company: "Indian Institute of Technology Patna",
+      location: "Patna, India",
+      description: "May 2023 - Nov 2023",
       image: iitp,
+      points: [
+        "Designed a fraud detection system on 250k+ Ethereum transactions using Graph Neural Networks (Temporal GATs) and Directed Random Walks to classify fraudulent nodes based on behavioral patterns, achieving 85% accuracy.",
+      ],
     },
     {
       name: "Artificial Intelligence Intern",
-      description: "Jun 2023 - Sep 2024",
+      company: "Infiheal",
+      location: "Mumbai, India",
+      description: "Jun 2023 - Sep 2023",
       image: infiheal,
+      points: [
+        "Engineered a RAG-based mental health chatbot with LangChain & Haystack, fine-tuned LLaMA on 500k+ user chat transcripts to handle sensitive user queries, reducing hallucinations and increasing user retention by 12%.",
+        "Deployed scalable ML architecture on AWS with Terraform & Docker, reducing manual setup time by 5+ hrs/week.",
+      ],
     },
   ];
 
@@ -180,6 +220,12 @@ import {
         "Feb 1, 2026 • 18 min read",
       image: snowflake,
       source_code_link: '/blogs/snowflake-workload-heterogeneity'
+    },
+    {
+      name: "Dynamic KV Cache Compression for Reasoning",
+      description: "Learned when to compress LLM KV caches during reasoning, improving accuracy from 26% to 32% • 2025",
+      image: kvcache,
+      source_code_link: "https://drive.google.com/file/d/1Wy1kQ9dgo7NFs-B14mSu8Rc3IiKyf2C2/view?usp=sharing"
     },
   ];
   

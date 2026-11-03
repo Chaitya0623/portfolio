@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 import SectionWrapper from '../hoc/SectionWrapper'
+import CardBadge from './CardBadge'
 import { Tilt } from 'react-tilt'
 
 const ProjectCard = ({
@@ -19,13 +20,14 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
-          scale: 1,
+          max: 0,
+          scale: 1.03,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px] border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
+        className='group bg-tertiary p-5 rounded-2xl w-full sm:w-[360px] border border-[#3a3a3a] shadow-[0_0_10px_rgba(255,204,0,0.3),_0_0_20px_rgba(255,105,180,0.2)]'
       >
         <div className='relative w-full h-[200px]'>
+            {source_code_link && <CardBadge type={source_code_link.startsWith('http') ? 'external' : 'internal'} />}
           {source_code_link?.startsWith('http') ? (
             <a 
               href={source_code_link} 

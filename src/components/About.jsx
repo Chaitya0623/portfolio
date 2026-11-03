@@ -29,26 +29,25 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 0.1)}
             className="mt-5 text-secondary text-[17px] leading-[30px] text-center"
           >
-            I am driven by a deep curiosity about human behavior, and a desire
-            to build scalable systems that don't just predict our actions, but
-            enable better decision making. As an incoming Data Science grad
-            student at Columbia University, I'm continuing to deepen my work at
-            the intersection of Artificial Intelligence, systems design and
-            human impact.
+            I build AI systems that go from research to production. I&apos;m a
+            Data Science grad student at Columbia University
+            (graduating December 2026), specializing in NLP and large scale
+            machine learning. Most recently, I was a Summer Associate at
+            JPMorganChase&apos;s Machine Learning Center of Excellence, working
+            on applied LLM research for financial applications.
           </motion.p>
 
           <motion.p
             variants={fadeIn("", "", 0.1, 0.1)}
             className="mt-5 text-secondary text-[17px] leading-[30px] text-center"
           >
-            I have led cross functional teams to build AI powered platforms from
-            the ground up, working alongside nonprofit leadership to develop a
-            new product vertical backed by Mozilla and Google. My work spans the
-            full stack of data driven development, from crafting predictive
-            models and GenAI applications to deploying robust, production ready
-            solutions. My goal is to build solutions that move beyond research,
-            bridging the gap between innovation and implementation to create
-            tangible value in the real world.
+            Before that, as the Founding AI Engineer at SimPPL (backed by
+            Mozilla, Google and UNICEF), I led a team building an AI powered
+            social network analytics platform that processed 1M+ interactions
+            for 20K+ users. I&apos;ve shipped production systems using LLM
+            agents, model fine tuning and cloud workflows, and have five
+            published papers spanning NLP, machine learning and computational
+            social science.
           </motion.p>
         </div>
       </div>
