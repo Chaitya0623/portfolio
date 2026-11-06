@@ -94,8 +94,25 @@ const List = ({ items }) => {
 
 const NoteRenderer = ({ src }) => {
   const blocks = parseNotes(src);
+  // Long chapters get a row of section links (buttons, so the URL hash keeps selecting the chapter).
+  const sections = blocks.filter((b) => b.type === "h3").map((b) => b.text);
   return (
     <div className="w-full">
+      {sections.length >= 6 && (
+        <nav aria-label="Sections" className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1.5 border-l-2 border-[#3a3a3a] pl-4">
+          <span className="text-[12px] uppercase tracking-wider text-[#9a9a9a]">Jump to</span>
+          {sections.map((t) => (
+            <button
+              key={t}
+              type="button"
+              onClick={() => document.getElementById(slugify(t))?.scrollIntoView({ behavior: "smooth" })}
+              className="text-[14px] text-[#6fa3f3] hover:text-white hover:underline underline-offset-4"
+            >
+              {t}
+            </button>
+          ))}
+        </nav>
+      )}
       {blocks.map((b, i) => {
         switch (b.type) {
           case "h2":

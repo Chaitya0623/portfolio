@@ -3,6 +3,7 @@ import dsa from "./content/dsa.md?raw";
 import os from "./content/operating-systems.md?raw";
 import networks from "./content/computer-networks.md?raw";
 import dbms from "./content/dbms.md?raw";
+import sql from "./content/sql.md?raw";
 import mathematics from "./content/mathematics.md?raw";
 import statistics from "./content/statistics.md?raw";
 import eda from "./content/eda.md?raw";
@@ -30,17 +31,17 @@ const groups = [
       ["Operating Systems", os],
       ["Computer Networks", networks],
       ["Database Management Systems", dbms],
+      ["SQL", sql],
       ["Blockchain & Smart Contracts", blockchain],
     ],
   },
-  { slug: "math-statistics", short: "∑", name: "Math & Statistics", accent: "#9085e9", parts: [["Mathematics", mathematics], ["Statistics & Probability", statistics]] },
+  { slug: "math-statistics", short: "∑", name: "Math & Statistics", accent: "#9085e9", parts: [["Mathematics", mathematics], ["Statistics & Probability", statistics], ["Exploratory Data Analysis & Visualization", eda]] },
   {
     slug: "machine-learning",
     short: "ML",
     name: "Machine Learning",
     accent: "#199e70",
     parts: [
-      ["Exploratory Data Analysis & Visualization", eda],
       ["Machine Learning", ml],
       ["Performance in Machine Learning", performance],
     ],
