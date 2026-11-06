@@ -96,18 +96,23 @@
   - 2. Standardization (Scaling data) → z-score (not an assumption as such, but it helps gradient descent converge)
   - 3. Linearity
   - 4. Multicollinearity - If 2 characteristics are similar, we drop one (and each observation should be independent of any other)
+    - Detect it with the Variance Inflation Factor, VIF = 1 / (1 − Rⱼ²), where Rⱼ² comes from regressing feature j on the other features; VIF above ~5–10 is a warning sign. It makes coefficients unstable and hard to interpret, but does not hurt predictions much
+  - 5. Homoscedasticity: residuals have constant variance (check with a residuals vs fitted plot)
 
 ### Logistic Regression (binary classification)
 
 - **Sigmoid Function:**
   $ σ(z) = 1 / (1 + e^(−z))
 - Best parameters are obtained by minimizing the cost function (log loss)
+- **Interpreting coefficients:** the model is linear in the log-odds, log(p / (1 − p)) = β₀ + β₁x₁ + …, so a one-unit increase in xᵢ multiplies the odds by e^βᵢ (the odds ratio), holding other features fixed
+  - Example: β = 0.4 for "number of late payments" → e^0.4 ≈ 1.49, so each extra late payment raises the odds of default by about 49%
 - **Performance Metrics:**
   - Accuracy = (TP + TN) / (TP + FP + FN + TN)
   - Precision = TP / (TP + FP) (accuracy of positive predictions)
   - Recall = TP / (TP + FN) (model's ability to identify all relevant instances)
   - F1-Score = 2 × Precision × Recall / (Precision + Recall) (harmonic mean)
 - **AUC (Area Under the ROC Curve):** evaluate binary classification models across all thresholds (for heavily imbalanced data, the precision-recall curve is often more informative)
+- **KS statistic (Kolmogorov–Smirnov):** the largest gap between the cumulative score distributions of positives and negatives, i.e. the maximum of TPR − FPR over all thresholds. Common in credit risk scoring; higher means the model separates the classes better
 - **Probit Regression** (uses the normal CDF instead of sigmoid in logistic)
 
 - **Imbalanced data:** judge with precision, recall, F1 or PR-AUC instead of accuracy; use class weights, resampling (undersampling, oversampling, SMOTE, applied to the training data only) and tune the decision threshold
@@ -244,6 +249,7 @@
 - **A/B testing** (or split testing) is a method of comparing two versions (A and B) of something—like a webpage, email, or app feature—by showing them to different user groups to see which performs better at achieving a specific goal, like more clicks or sign-ups, using data to make informed decisions for better user experience and conversion rates
   - Define the goal and hypothesis
   - Select key metrics
+    - **Guardrail metrics:** metrics that must not get worse even if the main metric improves (latency, crash rate, unsubscribes, revenue per user)
   - Determine Statistical Parameters:
     - **Significance Level (Alpha):** The probability of rejecting a true null hypothesis (Type I error), typically set at 0.05.
     - **Statistical Power (1 − Beta):** The probability of correctly rejecting a false null hypothesis (avoiding a Type II error, whose probability is Beta), typically set at 0.8.

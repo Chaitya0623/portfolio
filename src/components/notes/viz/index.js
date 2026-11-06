@@ -6,6 +6,7 @@ import { BiasVariance, GradientDescent1D, GradientDescentVariants, Classificatio
 import { Optimizers, LRSchedulers, Roofline, InferenceMemory, Activations, SoftmaxTemperature, Convolution, NormAxes, Dropout } from "./deep";
 import { BPE, Bigram, TFIDF, Attention, Decoding, BeamSearch, CbowSkipgram } from "./nlp";
 import { Pathfinding, AlphaBeta, LocalSearch, RAGRetrieval } from "./ai";
+import { SqlWindow } from "./sql";
 import { AirflowDAG, HITS, DeployArchitecture, GasFee, Bandit, MultiHop } from "./misc";
 
 // Referenced from the notes markdown as `::viz <id>`.
@@ -77,4 +78,5 @@ export const VIZ = {
   "gas-fee": GasFee,
   bandit: Bandit,
   "multi-hop": MultiHop,
+  "sql-window": SqlWindow,
 };

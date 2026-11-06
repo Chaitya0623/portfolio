@@ -25,18 +25,26 @@
 
 ## Hypothesis Testing
 
+- **Null vs alternative hypothesis:** H₀ is the default "no effect / no difference" claim, H₁ is what we are looking for evidence of. We never "accept" H₀, we either reject it or fail to reject it
+- **p-value:** the probability of seeing data at least as extreme as ours if H₀ were true (it is not the probability that H₀ is true)
+- **Significance level (α):** the false positive rate we are willing to tolerate, usually 0.05. Reject H₀ when p < α
 - In order to determine the difference between a sample mean and a population mean
   - **Z-test** (large sample tests, or when the population σ is known)
     $ z = (x̄ − μ) / (σ / √n)
   - **T-test** (small sample tests, population σ unknown)
     $ t = (x̄ − μ) / (s / √n),  with n − 1 degrees of freedom
+- **Comparing two group means** (e.g. control vs treatment): two-sample t-test (Welch's version does not assume equal variances); use a paired t-test when the same units are measured twice (before / after)
+  $ t = (x̄₁ − x̄₂) / √(s₁²/n₁ + s₂²/n₂)
 - **Chi-Square Test (χ²):** to check if a set of data fits a specified distribution, where O = observed, E = expected
   $ χ² = ∑ (Oᵢ − Eᵢ)² / Eᵢ
 - **ANOVA (Analysis of Variance):** to determine if there are statistically significant differences between the means of three or more independent groups. State the hypothesis, get the null hypothesis, calculate sum of squares, degrees of freedom (for between and within, how many independent variations we are measuring in the data), F ratio (variance between groups to variance within groups) and then decision (if calculated F > critical F, reject the null hypothesis)
   $ F = MS_between / MS_within = (SS_between / (k − 1)) / (SS_within / (N − k))
+- **Which test when:** two means → t-test, three or more means → ANOVA, categorical counts (goodness of fit, independence) → chi-square, proportions with large samples → z-test
 
 - **Type I error:** false positive (rejecting a true H₀), probability α. **Type II error:** false negative (missing a real effect), probability β. **Power** = 1 − β
 - **95% confidence interval:** if we repeated the sampling many times, 95% of the intervals built this way would contain the true parameter (it is not "a 95% probability the parameter is inside this particular interval")
+  $ x̄ ± z(α/2) · s/√n      (95%: x̄ ± 1.96 · s/√n)
+  - This works even when the data isn't normal, because the Central Limit Theorem makes x̄ approximately normal for large n
 - **Multiple testing:** testing 20 independent metrics at α = 0.05 gives about a 64% chance (1 − 0.95²⁰) of at least one false positive. Bonferroni uses α/m; Benjamini–Hochberg controls the false discovery rate
 
 ::viz p-value

@@ -56,9 +56,11 @@
 
 - **Binomial Distribution:** Fixed number of independent trials, each with a binary output. Its PMF, mean and variance are:
   $ P(X = k) = C(n, k) pᵏ (1 − p)ⁿ⁻ᵏ,   μ = np,   σ² = np(1 − p)
+  - Example: number of defaults out of n = 100 loans, each defaulting independently with p = 0.03, so μ = 3 and σ² = 100 × 0.03 × 0.97 = 2.91
 - **Bernoulli Distribution:** a single trial with a binary output (success with probability p); binomial is for a fixed number of independent bernoulli trials
 - **Poisson Distribution:** Probability of a certain number of events within a fixed time interval
   $ P(X = k) = λᵏ e^(−λ) / k!,   μ = λ,   σ² = λ
+  - Example: number of fraud alerts per hour, or loan applications per day. It approximates the binomial when n is large and p is small (λ = np)
 
 ### Continuous
 
@@ -99,6 +101,7 @@
     $ θ̂ = argmax ℓ(θ)
 - **Central Limit Theorem:** under certain conditions, the means of sufficiently large random samples from a population will be approximately normally distributed, regardless of the population's original distribution
   $ (Sₙ − nμ) / √(nσ²) → N(0, 1)   (convergence in distribution)
+  - Why it matters: sample means (and proportions) are roughly normal even for skewed data like incomes or transaction amounts, with spread σ/√n. This is what justifies z/t-tests and confidence intervals
 
 ::viz clt
 
